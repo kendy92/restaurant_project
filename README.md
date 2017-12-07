@@ -12,3 +12,7 @@ Team Member:
 06/12/2017:
 - Upload project files to git hub
 - HTML & Styling layout for homepage
+
+07/12/2017:
+- Connect github repository to heroku app
+- Member can visit web project on: https://team4-webproject.herokuapp.com/index.html
