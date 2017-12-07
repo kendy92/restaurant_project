@@ -12,4 +12,3 @@ Team Member:
 06/12/2017:
 - Upload project files to git hub
 - HTML & Styling layout for homepage
-
