@@ -1,0 +1,275 @@
+html{
+    box-sizing:border-box;
+}
+
+*, *::before, *::after{
+    box-sizing:inherit;
+    margin:0;
+    padding:0;
+}
+
+body{
+    color:#fff;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    line-height: 2em;
+    background-color:#edeae6;
+}
+
+a,a:active, a:visited, ac:link{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul, li{
+    list-style-type:none;
+}
+
+#header{
+    background-color:#100E0F;
+}
+
+.flex-container{
+    display:flex;
+    flex-flow: row wrap;
+    padding:1em;
+    justify-content: space-around;
+}
+
+.logo{
+    flex: 1 1 0;
+}
+
+.logo img{
+    width:200px;
+}
+
+.contact-top{
+    flex: 2 1 0;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.contact-top ul li{
+    display:inline-block;
+    margin-right:2em;
+    margin-top:1em;
+}
+
+a.btn-contest{
+    border:1px solid #fff;
+    padding:1em;
+    border-radius:5px;
+}
+
+ul.top-menu{
+    display:flex;
+    flex-flow:row wrap;
+    background-color: #AE060E;
+    justify-content:space-around;
+    position:relative;
+}
+
+ul.top-menu li{
+    padding:1em;
+}
+
+ul.top-menu li > ul{
+    display:none;
+    position:absolute;
+    top:51px;
+    padding:0;
+    margin:0;
+    background-color: #AE060E;
+}
+
+ul.top-menu li:hover ul{
+    display:block;
+}
+
+ul.top-menu li ul li{
+    width:136px;
+    border-top:1px solid #ddd;
+}
+
+#main{
+    color:#000;
+}
+
+.banner-section{
+    background:url(images/slider1-3.jpg);
+    background-attachment:scroll;
+    background-size: cover;
+    height:360px;
+}
+
+.special-section{
+    width:100%;
+}
+
+.special-section h2{
+    flex 1 1 0;
+    border:1px solid #000;
+    font-size:1.2rem;
+    padding:.5em;
+    width:15%;
+}
+
+.special-section span{
+    flex: 1 1 0;
+    border:1px solid #000;
+    padding:.5em;
+    font-size:1.2rem;
+    width:85%;
+}
+
+.about-us{
+    padding:1em;
+}
+
+.btn-giftcard{
+    color:#000;
+    display:block;
+    border:1px solid #000;
+    width:250px;
+    padding:1.5em;
+    text-align:center;
+    border-radius:10px;
+}
+
+.features{
+    padding:1em;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.thumbnail{
+    background-color:#fff;
+
+}
+
+.thumbnail img{
+    border-radius:100%;
+}
+
+.thumbnail h3{
+    text-align:center;
+}
+
+.menu{
+    width:100%;
+    padding:2em;
+    text-align:center;
+}
+
+.breakfast-menu{
+    width:25%;
+    height:250px;
+    float:left;
+    border:1px solid #000;
+}
+
+.lunch-menu{
+    width:25%;
+    height:100px;
+    float:left;
+    border:1px solid #000;
+    
+}
+.desserts-menu{
+    width:25%;
+    height:100px;
+    float:left;
+    border:1px solid #000;
+}
+
+.dinner-menu{
+    width:50%;
+    height:150px;
+    float:left;
+    border:1px solid #000;
+}
+
+.drinks-menu{
+    width: 25%;
+    height:250px;
+    display:inline-block;
+    border:1px solid #000;
+}
+
+.contact-us{
+    clear:both;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    padding:2em;
+}
+
+.feed-back{
+    
+}
+
+.reservation-form{
+    
+}
+
+#reserveFrm label{
+    display:none;
+}
+
+#reserveFrm input{
+    width:400px;
+    height: 30px;
+    padding:.5em;
+    border-radius:10px;
+    border:none;
+    margin-bottom:1em;
+}
+
+#reserveFrm textarea{
+    height:100px;
+    width:400px;
+    padding:.5em;
+    border-radius:10px;
+    border:none;
+    margin-bottom:1em;
+}
+
+#footer{
+    background-color:#222;
+    color:#aaa;
+}
+
+#footer h3{
+    color:#fff;
+}
+
+#footer a{
+    color:#fff;
+}
+
+.social-link li{
+    display:inline-block;
+    font-size:2.5em;
+    margin:.2em;
+}
+
+.social-link li a{
+    color:#b00000 !important;
+}
+
+.col-8{
+    text-align:left;
+}
+
+.col-4 ul li{
+    display:inline-block;
+    padding: 0 1em 0 1em;
+    border-right:1px solid #aaa;
+}
+
+.col-4 ul li:last-child{
+    border:none;
+}
