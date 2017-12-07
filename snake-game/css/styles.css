@@ -1,0 +1,52 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+canvas{
+    max-height:100%;
+    border: 2px solid brown;
+    display: block;
+    background: url("../img/BG.jpg") ;
+    background-size:cover;
+}
+.game-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-info p{
+    font-size:12px;
+}
+.controls{
+    width: 9em;
+    height: 9em;
+    display: flex;
+    flex-direction:column;
+    margin-left:2em;
+    margin-right:2em;
+    border:1px solid green;
+}
+.upline,.downline{
+    display: flex;
+    justify-content: center;
+}
+.middleline{
+    display: flex;
+    justify-content:space-between;
+}
+.control {
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.control img{
+    max-width: 100%;
+}
