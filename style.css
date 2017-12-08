@@ -97,10 +97,6 @@ ul.top-menu li ul{
     z-index:9999;
 }
 
-ul.top-menu li:hover ul{
-    display:block;
-}
-
 ul.top-menu li ul li a{
     display:block;
     padding:1em;
