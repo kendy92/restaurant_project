@@ -88,12 +88,13 @@ ul.top-menu li a:hover{
     color:#AE060E;
 }
 
-ul.top-menu li > ul{
+ul.top-menu li ul{
     display:none;
     position:absolute;
     padding:0;
     margin:0;
     background-color: #AE060E;
+    z-index:9999;
 }
 
 ul.top-menu li:hover ul{
@@ -102,19 +103,13 @@ ul.top-menu li:hover ul{
 
 ul.top-menu li ul li a{
     display:block;
-    border-top:1px solid #ddd;
     padding:1em;
     width:144px;
 }
 
-ul.top-menu li ul li a:first-child{
-    border:none;
-}
-
 ul.top-menu li>ul>li>a:hover{
     background-color:#fff;
-    color: #AE060E;
-    
+    color: #AE060E;   
 }
 
 #main{
