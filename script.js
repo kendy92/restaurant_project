@@ -1,3 +1,4 @@
 $(function(){
-   //Do the code inside this block
+   //init Date picker
+    $("#datepicker").datepicker();
 });
