@@ -45,6 +45,10 @@ ul, li{
     width:200px;
 }
 
+.toggleBtn{
+    display:none;
+}
+
 .contact-top{
     flex: 2 1 0;
     display:flex;
@@ -71,16 +75,17 @@ a.btn-contest:hover{
 }
 
 ul.top-menu{
-    display:flex;
-    flex-flow:row wrap;
     background-color: #AE060E;
-    justify-content:space-around;
     position:relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 ul.top-menu li a{
     display:block;
     padding:1em;
+    flex: 1 1 0;
 }
 
 ul.top-menu li a:hover{
@@ -107,6 +112,10 @@ ul.top-menu li>ul>li>a:hover{
     background-color:#fff;
     color: #AE060E;   
 }
+
+.contest-sm-btn{
+        display:none;
+    }
 
 #main{
     color:#000;
