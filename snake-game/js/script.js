@@ -17,6 +17,7 @@ const game = function () {
 	let barriersMax = 3
 	const images = {
 		head: {src: './img/head.png', object: null},
+		snakeBody: {src: './img/body.png', object: null},
 		bubble: {src: './img/Bubble.png', object: null, items: []},
 		background: {src: './img/BG.jpg', object: null},
 		reef: {src: './img/reef.png', object: null, size: 0.6},
@@ -55,13 +56,47 @@ const game = function () {
 	//12px
 
 	function drawSnake() {
-		for (let part of snake) {
+		for (let i = snake.length - 1; i >= 0; i--) {
+			let part = snake[i]
 			if (part.x === snake[0].x && part.y === snake[0].y) {
-				ctx.drawImage(images.head.object, part.x, part.y);
+				drawRotated(images.head.object, part.x - partLength / 4, part.y - partLength / 4, part.direction,partLength*1.5)
 			} else {
-				drawElem(part.x, part.y, 'snake');
+				drawRotated(images.snakeBody.object, part.x , part.y , part.direction,partLength,16)
 			}
 		}
+	}
+
+	function drawRotated(imgObj, x, y, degree, partL,partH) {
+		let bodyX=0
+		let bodyY=0
+		switch (degree) {
+			case 'right':
+				degree = 90
+				bodyX=0
+				bodyY=-partL
+				break
+			case 'left':
+				degree = 270
+				bodyX=-partL
+				bodyY=0
+				break
+			case 'up':
+				degree = 0
+				break
+			case 'down':
+				degree = 180
+				bodyX=-partL
+				bodyY=-partL
+				break
+		}
+		if(!partH){
+			partH=partL
+		}
+		ctx.save();
+		ctx.translate(x, y);
+		ctx.rotate(degree * Math.PI / 180);
+		ctx.drawImage(imgObj, bodyX, bodyY, partL, partH);
+		ctx.restore();
 	}
 
 	function drawElem(x, y, name) {
@@ -359,9 +394,9 @@ const game = function () {
 		let part = snake[index]
 		let isTimeToRecalculate = (part.x % partLength === 0) && (part.y % partLength === 0)
 		if (isTimeToRecalculate) {
-			if(part===snake[0]){
+			if (part === snake[0]) {
 				part.direction = direction;
-			}else{
+			} else {
 				part.direction = snake[index - 1].direction
 			}
 		}
@@ -405,15 +440,15 @@ const game = function () {
 					part.y += speed
 					break;
 			}
-			if (part.x+partLength/2 >= canvas.width) {
-				part.x = 0-partLength/2
-			} else if (part.x < 0-partLength/2) {
-				part.x = canvas.width -partLength/2
+			if (part.x + partLength / 2 > canvas.width) {
+				part.x = 0 - partLength / 2 + 1
+			} else if (part.x < 0 - partLength / 2) {
+				part.x = canvas.width - partLength / 2 - 1
 			}
-			if (part.y+partLength/2 > canvas.height) {
-				part.y = 0-partLength/2
-			} else if (part.y < 0-partLength/2) {
-				part.y = canvas.height -partLength/2
+			if (part.y + partLength / 2 > canvas.height) {
+				part.y = 0 - partLength / 2 + 1
+			} else if (part.y < 0 - partLength / 2) {
+				part.y = canvas.height - partLength / 2 - 1
 			}
 		}
 
