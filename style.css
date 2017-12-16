@@ -45,6 +45,10 @@ ul, li{
     width:200px;
 }
 
+.toggleBtn{
+    display:none;
+}
+
 .contact-top{
     flex: 2 1 0;
     display:flex;
@@ -71,16 +75,17 @@ a.btn-contest:hover{
 }
 
 ul.top-menu{
-    display:flex;
-    flex-flow:row wrap;
     background-color: #AE060E;
-    justify-content:space-around;
     position:relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 ul.top-menu li a{
     display:block;
     padding:1em;
+    flex: 1 1 0;
 }
 
 ul.top-menu li a:hover{
@@ -88,34 +93,29 @@ ul.top-menu li a:hover{
     color:#AE060E;
 }
 
-ul.top-menu li > ul{
+ul.top-menu li ul{
     display:none;
     position:absolute;
     padding:0;
     margin:0;
     background-color: #AE060E;
-}
-
-ul.top-menu li:hover ul{
-    display:block;
+    z-index:9999;
 }
 
 ul.top-menu li ul li a{
     display:block;
-    border-top:1px solid #ddd;
     padding:1em;
     width:144px;
 }
 
-ul.top-menu li ul li a:first-child{
-    border:none;
-}
-
 ul.top-menu li>ul>li>a:hover{
     background-color:#fff;
-    color: #AE060E;
-    
+    color: #AE060E;   
 }
+
+.contest-sm-btn{
+        display:none;
+    }
 
 #main{
     color:#000;
@@ -126,30 +126,26 @@ ul.top-menu li>ul>li>a:hover{
     background-attachment:scroll;
     background-size: cover;
     height:360px;
+    position:relative;
 }
 
 .special-section{
     width:100%;
-}
-
-.special-section h2{
-    flex 1 1 0;
-    border:1px solid #000;
-    font-size:1.2rem;
-    padding:.5em;
-    width:15%;
+    padding:2em;
+    position:absolute;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
 }
 
 .special-section span{
-    flex: 1 1 0;
-    border:1px solid #000;
-    padding:.5em;
     font-size:1.2rem;
     width:85%;
 }
 
 .about-us{
-    padding:1em;
+    padding:2em;
+    text-align:justify;
 }
 
 .btn-giftcard{
@@ -163,23 +159,20 @@ ul.top-menu li>ul>li>a:hover{
 }
 
 .features{
-    padding:1em;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    background-color:#AE060E;
 }
 
 .thumbnail{
-    background-color:#fff;
-
+    text-align:center;
 }
 
 .thumbnail img{
-    border-radius:100%;
+    width: 100px;
 }
 
 .thumbnail h3{
     text-align:center;
+    color:#fff;
 }
 
 .menu{
@@ -225,40 +218,75 @@ ul.top-menu li>ul>li>a:hover{
 
 .contact-us{
     clear:both;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: space-between;
     padding:2em;
 }
 
 .feed-back{
-    
+    flex: 2 1 0;
 }
 
 .reservation-form{
-    
+    flex: 1 1 0;
+    position:relative;
+    background-color:#FFFFFF;
+    padding:1em;
+    text-align:center;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.reservation-form h3{
+    background-color:#AE060E;
+    color:#fff;
+    padding:.2em;
+    position:absolute;
+    top:-20px;
+    left:67px;
+    width:300px;
+}
+
+#reserveFrm{
+    padding-top:2em;
 }
 
 #reserveFrm label{
-    display:none;
+    display:block;
+    text-align:left;
+    color:#585858;
+    padding-left:3em;
 }
 
-#reserveFrm input{
-    width:400px;
+#reserveFrm input, #reserveFrm #time, #reserveFrm #group_size{
+    width:300px;
     height: 30px;
     padding:.5em;
-    border-radius:10px;
-    border:none;
-    margin-bottom:1em;
+    border:1px solid #ddd;
+    background-color: #F8F8F8;
+    margin-bottom:2em;
+
 }
 
 #reserveFrm textarea{
     height:100px;
-    width:400px;
+    width:300px;
     padding:.5em;
-    border-radius:10px;
-    border:none;
+    border:1px solid #ddd;
     margin-bottom:1em;
+    background-color: #F8F8F8;
+}
+
+#btnSubmit{
+    background-color:#AE060E !important;
+    color:#fff;
+    width:100px !important;
+    padding:2em !important;
+    line-height:0em;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+#btnSubmit:hover{
+    background-color:#880000 !important;
+    cursor:pointer;
 }
 
 #footer{

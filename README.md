@@ -16,3 +16,4 @@ Team Member:
 07/12/2017:
 - Connect github repository to heroku app
 - Member can visit web project on: https://team4-webproject.herokuapp.com/index.html
+- Add tablet design
