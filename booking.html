@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking - Saffron Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css?v=1.0">
+    <link rel="stylesheet" type="text/css" href="tablet-style.css">
+    <link rel="stylesheet" type="text/css" href="mobile-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js?v=1.0"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="flex-container">
+            <div class="logo">
+            <a href="index.html"><img src="images/restaurant-logo.png" alt="This is the logo of website" title="The Restaurant logo"></a>
+            </div>
+            <div class="toggleBtn">MENU</div>
+            <div class="contact-top">
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+310701234567">+1-(647)-739-5138</a></li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@therestaurant.com">info@saffronrestaurant.ca</a></li>
+                    <li><a href="snake-game/index.html" class="btn-contest">Enter Contest</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul class="top-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="child-menu">
+                        <li><a href="our-story.html">Our Story</a></li>
+                        <li><a href="core-team.html">Core Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Book an event</a></li>
+                <li><a href="our-special.html">Our Specials</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="#">Contact Us &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="child-menu">
+                        <li><a href="inquiry.html">Inquiry</a></li>
+                        <li><a href="location.html">Locations</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="contest-sm-btn"><a href="/snake-game">Enter Contest</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="booking-content">
+        <h1>Book an Event</h1>
+        <p>Come join us for a culinary experience of a lifetime - be it a regular breakfast, lunch, dinner or a big party. We have custom menu, multiple location choices and attractive prices.</p>
+        <p>Fill out this form carefully and we will contact you in the next 24 hours.</p>
+        <form id="booking-frm" name="booking-frm" action="#" method="post">
+            <div>
+                <label for="eventname">Event Name</label>
+                <input type="text" id="eventname" name="eventname" required>
+            </div>
+            <div>
+                <label for="eventtype">Event Type</label>
+                <select id="eventtype" name="eventtype" required>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Luch">Luch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Brunch">Brunch</option>
+                    <option value="Bachelorette">Bachelorette</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Promotion">Promotion</option>
+                    <option value="Photoshoot">Photoshoot</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Surprise">Surprise</option>
+                </select>
+            </div>
+            <div>
+                <label for="eventdate">Event Date</label>
+                <input type="text" id="eventdate" name="eventdate" placeholder="Click to select date" required>
+            </div>
+            <div>
+                <label for="starttime">Start Time</label>
+                <select id="starttime" name="starttime" required>
+                        <option value="8:00" >8:00 am</option>
+                            <option value="8:30" >8:30 am</option>
+                            <option value="9:00" >9:00 am</option>
+                            <option value="9:30" >9:30 am</option>
+                            <option value="10:00" >10:00 am</option>
+                            <option value="10:30" >10:30 am</option>
+                            <option value="11:00" >11:00 am</option>
+                            <option value="11:30" >11:30 am</option>
+                            <option value="12:00" >12:00 pm</option>
+                            <option value="12:30" >12:30 pm</option>
+                            <option value="13:00" >1:00 pm</option>
+                            <option value="13:30" >1:30 pm</option>
+                            <option value="14:00" >2:00 pm</option>
+                            <option value="14:30" >2:30 pm</option>
+                            <option value="15:00" >3:00 pm</option>
+                            <option value="15:30" >3:30 pm</option>
+                            <option value="16:00" >4:00 pm</option>
+                            <option value="16:30" >4:30 pm</option>
+                            <option value="17:00" >5:00 pm</option>
+                            <option value="17:30" >5:30 pm</option>
+                            <option value="18:00" >6:00 pm</option>
+                            <option value="18:30" >6:30 pm</option>
+                            <option value="19:00" >7:00 pm</option>
+                            <option value="19:30" selected="selected">7:30 pm</option>
+                            <option value="20:00" >8:00 pm</option>
+                            <option value="20:30" >8:30 pm</option>
+                            <option value="21:00" >9:00 pm</option>
+                            <option value="21:30" >9:30 pm</option>
+                            <option value="22:00" >10:00 pm</option>
+                            <option value="22:30" >10:30 pm</option>
+                            <option value="23:00" >11:00 pm</option>
+                            <option value="23:30" >11:30 pm</option>
+                </select>
+            </div>
+            <div>
+                <label for="endtime">End Time</label>
+                <select id="endtime" name="endtime" required>
+                            <option value="8:00" >8:00 am</option>
+                            <option value="8:30" >8:30 am</option>
+                            <option value="9:00" >9:00 am</option>
+                            <option value="9:30" >9:30 am</option>
+                            <option value="10:00" >10:00 am</option>
+                            <option value="10:30" >10:30 am</option>
+                            <option value="11:00" >11:00 am</option>
+                            <option value="11:30" >11:30 am</option>
+                            <option value="12:00" >12:00 pm</option>
+                            <option value="12:30" >12:30 pm</option>
+                            <option value="13:00" >1:00 pm</option>
+                            <option value="13:30" >1:30 pm</option>
+                            <option value="14:00" >2:00 pm</option>
+                            <option value="14:30" >2:30 pm</option>
+                            <option value="15:00" >3:00 pm</option>
+                            <option value="15:30" >3:30 pm</option>
+                            <option value="16:00" >4:00 pm</option>
+                            <option value="16:30" >4:30 pm</option>
+                            <option value="17:00" >5:00 pm</option>
+                            <option value="17:30" >5:30 pm</option>
+                            <option value="18:00" >6:00 pm</option>
+                            <option value="18:30" >6:30 pm</option>
+                            <option value="19:00" >7:00 pm</option>
+                            <option value="19:30" >7:30 pm</option>
+                            <option value="20:00" >8:00 pm</option>
+                            <option value="20:30" >8:30 pm</option>
+                            <option value="21:00" >9:00 pm</option>
+                            <option value="21:30" >9:30 pm</option>
+                            <option value="22:00" >10:00 pm</option>
+                            <option value="22:30" >10:30 pm</option>
+                            <option value="23:00" selected="selected">11:00 pm</option>
+                            <option value="23:30" >11:30 pm</option>
+                </select>
+            </div>
+            <div>
+                <label for="venue">Select Venue</label>
+                <ul id="venue">
+                    <li><img src="images/open-terrace-venue.jpg" alt="Open terrace venue">
+                    <input type="button" data="Open Terrace" id="bookbtn" value="BOOK"></li>
+                    <li><img src="images/first-floor-venue.jpg" alt="First floor venue">
+                    <input type="button" data="First floor" id="bookbtn" value="BOOK"></li>
+                    <li><img src="images/ground-floor-restaurant.jpg" alt="Ground floor venue">
+                    <input type="button" data="Ground floor" id="bookbtn" value="BOOK"></li>
+                    <li><img src="images/second-floor-venue.JPG" alt="Second floor venue">
+                    <input type="button" data="Second floor" id="bookbtn" value="BOOK"></li>
+                </ul>
+                <div id="selected-venue"></div>
+            </div>
+            <div>
+                <label for="guest">Guest</label>
+                <select id="guest" name="guest" required>
+                    <option value="5-10">5-10</option>
+                    <option value="10-15">10-15</option>
+                    <option value="15-20">15-20</option>
+                    <option value="20-25">20-25</option>
+                    <option value="25-30">25-30</option>
+                    <option value="30-35">30-35</option>
+                    <option value="35-40">35-40</option>
+                    <option value="40-45">40-45</option>
+                    <option value="45-50">45-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </div>
+            <div>
+                <label for="budget">Budget</label>
+                <input type="number" id="budget" name="budget" placeholder="CDN" required>
+                <p>Excluding taxes and tip</p>
+            </div>
+            <div>
+                <label for="contactname">Contact Name</label>
+                <input type="text" id="contactname" name="contactname" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="addinfo">Aditional Information (Optional)</label>
+                <textarea id="addinfo" name="addinfo"></textarea>
+                <p>Maximum 250 characters</p>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox1"> I accept all Terms & Conditions of Saffron Restaurant
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2"> Yes, sign-me up for daily specials at Saffron Restaurant
+            </div>
+            <div>
+            <input type="submit" id="btnsubmit" name="btnsubmit" value="BOOK NOW">
+            </div>
+        </form>
+            <p>Booking for an event is absolutely <strong>FREE</strong> till 30th January 2017.</p>
+            <p>Incase of a cancellation, re-booking or any changes to the current plan, please call our tool free number 888-453-2134</p>
+    </div> 
+        
+    </main>
+    
+    <footer id="footer">
+        <div class="row flex-container">
+            <div class="col-3">
+                <h3>Get in touch</h3>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1-(647)-739-5138</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;info@saffronrestaurant.ca</p>
+                <div>
+                    <ul class="social-link">
+                        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>Saffron Restaurant</h3>
+                <ul class="bottom-menu">
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="menu.html">Our menu</a></li>
+                    <li><a href="booking.html">Book an Event</a></li>
+                    <li><a href="our-special.html">Specials</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Open Daily</h3>
+                <ul>
+                    <li>Monday 11:00 AM - 11:00 PM</li>
+                    <li>Tuesday 11:00 AM - 11:00 PM</li>
+                    <li>Wednesday 11:00 AM - 11:00 PM</li>
+                    <li>Thursday 11:00 AM - 11:00 PM</li>
+                    <li>Friday 11:00 AM - 11:00 PM</li>
+                    <li>Saturday 09:00 AM - 11:00 PM</li>
+                    <li>Sunday 09:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p>This is advertise section</p>
+            </div>
+        </div>
+        <div class="row flex-container">
+            <div class="col-8">
+                <p>&copy; 2018 Saffron Restaurant</p>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of use</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -215,7 +215,6 @@ ul.top-menu li>ul>li>a:hover{
 
 .food-list{
     width:100%;
-    padding:2em;
     text-align:center;
 }
 
@@ -531,5 +530,109 @@ ul.top-menu li>ul>li>a:hover{
 }
 
 
+/* BOOKING PAGE */
+.booking-content{
+    padding:2em;
+    color:#000;
+}
+
+.booking-content h1{
+    text-align: center;
+}
+
+#booking-frm{
+    margin: 1em auto;
+    width: 80%;
+    border: 1px solid #dedede;
+    padding: 2em;
+}
+
+#booking-frm label{
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+
+#booking-frm input, #booking-frm select,#booking-frm textarea{
+    margin: .5em .5em;
+    width:80%;
+}
+
+#booking-frm #bookbtn{
+    width:100px;
+}
+
+#booking-frm input{
+    padding: 1.3em;
+    border: 1px solid #333;
+}
+
+#booking-frm select{
+    border: 1px solid #333;
+    background-color: #fff;
+    display: inline-block;
+    height: 50px;
+}
+
+#booking-frm textarea{
+    height:100px;
+}
+
+#booking-frm p{
+    font-style:italic;
+    font-size: .85rem;
+}
+
+#booking-frm ul{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#booking-frm ul li{
+    flex:1 1 auto;
+    padding:.5em;
+    cursor: pointer;
+}
+
+#booking-frm ul li img{
+    width:100px;
+    height:78px;
+}
+
+#booking-frm input[type="checkbox"]{
+    margin:0;
+    padding:0;
+    width:30px;
+}
+
+#booking-frm #btnsubmit{
+    border:1px solid #AE060E;
+    color:#AE060E;
+    transition:all .5s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    width:150px;
+    height:50px;
+}
+
+#booking-frm #btnsubmit:hover{
+    background-color:#AE060E;
+    color:#fff;
+}
+
+#booking-frm div:last-child{
+    text-align: center;
+    margin: 1em 0;
+}
+
+.full-size-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100% !important;
+    height: 80% !important;
+}
 
 

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="tablet-style.css">
     <link rel="stylesheet" type="text/css" href="mobile-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="script.js?v=1.0"></script>
 </head>
@@ -145,7 +146,8 @@
         <div class="contact-us flex-container">
             <div class="feed-back">
                 <h2>People are loving us...</h2>
-                <div class="customer-1 flex-container">
+                <marquee direction="down" onmouseover="this.stop();" onmouseout="this.start();">
+                    <div class="customer-1 flex-container">
                     <div class="thumb">
                         <img src="images/Icons8_flat_businessman.png">
                         <div class="rating">
@@ -193,6 +195,8 @@
                         <strong><em>Glovanni Rocca, Bon Appétit</em></strong>
                     </div>
                 </div>
+                    
+                </marquee>
             </div>
             <div class="reservation-form">
                 <h3>Make a reservation</h3>
