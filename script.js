@@ -2,7 +2,7 @@
 $(function(){
    //init Date picker
     $("#datepicker").datepicker();
-    
+    $("#eventdate").datepicker();
     
     //special dish random value
     var dishes = ["Mulligatowny Soup","Chicken Karahi","Chicken Jalfrezi","Mutton Home Style", "Beef Manalu"];
@@ -37,6 +37,86 @@ $(function(){
         $(this).children("img").removeClass("flipped");
         $(this).children("h3").fadeOut(500);
     });
+    
+    //validation booking form
+    var get_venue = "";
+    $("#venue li #bookbtn").on('click',function(){
+       get_venue = $(this).attr("data");
+        //$(this).children("img").toggleClass("full-size-img");
+       $("#selected-venue").text("You have select " + get_venue);
+    });
+    
+    $("#venue li img").hover(function(){
+        $(this).addClass("full-size-img");
+    }, function(){
+        $(this).removeClass("full-size-img");
+    });
+    
+    $("#btnsubmit").on('click',function(){
+        var ename = $("#eventname").val();
+        var etype = $("#eventtype").val();
+        var edate = $("#eventdate").val();
+        var estart = $("#starttime").val();
+        var eend = $("#endtime").val();
+        var eguest = $("#guest").val();
+        var venue = get_venue;
+        var ebudget = $("#budget").val();
+        var econtactname = $("#contactname").val();
+        var ephone = $("#phone").val();
+        var eemail = $("#email").val();
+        var einfo = $("#addinfo").val();
+        var checkbox1 = $("#checkbox1").prop('checked');
+        var checkbox2 = $("#checkbox2").prop('checked');
+        
+        if(ename === ""){
+            alert("Please enter event name!");
+            $("#eventname").focus();
+            return false;
+        }else if(edate === ""){
+            alert("Please choose event date!");
+            $("#eventdate").focus();
+            return false;
+        }else if(venue === ""){
+            alert("Please select venue to operate event!");
+            $("#venue").focus();
+            return false;
+        }else if(ebudget === ""){
+            alert("Please enter your budget!");
+            $("#budget").focus();
+            return false;
+        }else if(econtactname === ""){
+            alert("Please enter your contact name!");
+            $("#contactname").focus();
+            return false;
+        }else if(ephone === ""){
+            alert("Please enter your contact number!");
+            $("#phone").focus();
+            return false;
+        }else if(eemail === ""){
+            alert("Please enter your email!");
+            $("#email").focus();
+            return false;
+        }else if(estart > eend){
+            alert("The end time cannot be lower than start time !");
+            return false;
+        }else if(checkbox1 === false || checkbox2 === false){
+            alert("Please check all the agreement!");
+            return false;
+        }else{
+            alert("Thanks for booking event with us. We will contact you soon!");
+            return true;
+        }
+        
+        
+    });
+    
+    
+    
+    
+    
+    
+    
+    
    //hover effect in top navigation
     
     var screen_width = $(window).width();
