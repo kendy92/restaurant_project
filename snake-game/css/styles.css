@@ -4,6 +4,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background: url(../img/pattern.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 canvas{
     max-height:100%;
