@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="style.css?v=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css?v=1.1">
     <link rel="stylesheet" type="text/css" href="tablet-style.css">
     <link rel="stylesheet" type="text/css" href="mobile-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,35 +18,35 @@
     <header id="header">
         <div class="flex-container">
             <div class="logo">
-            <img src="images/restaurant-logo.png" alt="This is the logo of website" title="The Restaurant logo">
+            <a href="index.html"><img src="images/restaurant-logo.png" alt="This is the logo of website" title="The Restaurant logo"></a>
             </div>
             <div class="toggleBtn">MENU</div>
             <div class="contact-top">
                 <ul>
                     <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+310701234567">+1-(647)-739-5138</a></li>
                     <li><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@therestaurant.com">info@saffronrestaurant.ca</a></li>
-                    <li><a href="/snake-game" class="btn-contest">Enter Contest</a></li>
+                    <li><a href="snake-game/index.html" class="btn-contest">Enter Contest</a></li>
                 </ul>
             </div>
         </div>
         <nav>
             <ul class="top-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="child-menu">
-                        <li><a href="page/our-story.html">Our Story</a></li>
-                        <li><a href="page/core-team.html">Core Team</a></li>
+                        <li><a href="our-story.html">Our Story</a></li>
+                        <li><a href="core-team.html">Core Team</a></li>
                     </ul>
                 </li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Book an event</a></li>
-                <li><a href="">Our Specials</a></li>
-                <li><a href="">Media</a></li>
-                <li><a href="">Contact Us &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Book an event</a></li>
+                <li><a href="our-special.html">Our Specials</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="#">Contact Us &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="child-menu">
-                        <li><a href="">Inquiry</a></li>
-                        <li><a href="">Locations</a></li>
-                        <li><a href="">Careers</a></li>
+                        <li><a href="inquiry.html">Inquiry</a></li>
+                        <li><a href="location.html">Locations</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </li>
                 <li class="contest-sm-btn"><a href="/snake-game">Enter Contest</a></li>
@@ -91,13 +91,13 @@
             
             <div class="special-section flex-container">
                 <h2>Today Special:</h2>
-                <span id="special-dish">Chicken Fried</span>
+                <span id="special-dish">Loading...</span>
             </div>
         </div>
         <div class="about-us">
             <h1>Saffron Restaurant: How it all started</h1>
             <p>Bringing in the exotic flavours from the plains of Northern India to the 6ix, Saffron Restaurant strives to be a one-stop shop for all you foodies out there. We are currently located in Downtown, Markham and Etobicoke, with 2 more locations in the making. Wish to know where it all started? <a href="page/our-story.html">Click here</a></p>
-            <a href="#" class="btn-giftcard">Send eGIFT CARD</a>
+            <a href="giftcard.html" class="btn-giftcard">Send eGIFT CARD</a>
         </div>
         <div class="features flex-container">
             <div class="thumbnail">
@@ -148,6 +148,13 @@
                 <div class="customer-1 flex-container">
                     <div class="thumb">
                         <img src="images/Icons8_flat_businessman.png">
+                        <div class="rating">
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="response">
                         <p>The menu strikes a balance between being too specialized and so broad and there is no specialization. Hence, each dish appears to be a chef's special: thoughtfully prepared with an appropriate dash of artistic flavour.</p>
@@ -157,6 +164,13 @@
                 <div class="customer-2 flex-container">
                     <div class="thumb">
                         <img src="images/Icons8_flat_businessman.png">
+                        <div class="rating">
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="response">
                         <p>Saffron has served consistently excellent Indian food. The menu is original and contains many twists on classic dishes. The service is very attentive and the quality of food excellent.</p>
@@ -166,6 +180,13 @@
                 <div class="customer-3 flex-container">
                     <div class="thumb">
                         <img src="images/Icons8_flat_businessman.png">
+                        <div class="rating">
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star rated" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="response">
                         <p>If you don't have the budget for a plan ticket to India, Saffron Restaurant is definitely the place to be for spicy curry cravings.</p>
@@ -261,12 +282,12 @@
             <div class="col-3">
                 <h3>Saffron Restaurant</h3>
                 <ul class="bottom-menu">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Our menu</a></li>
-                    <li><a href="">Book an Event</a></li>
-                    <li><a href="">Specials</a></li>
-                    <li><a href="">Media</a></li>
-                    <li><a href="">Contact us</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="menu.html">Our menu</a></li>
+                    <li><a href="booking.html">Book an Event</a></li>
+                    <li><a href="our-special.html">Specials</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
                 </ul>
             </div>
             <div class="col-3">
@@ -291,9 +312,9 @@
             </div>
             <div class="col-4">
                 <ul>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms of use</a></li>
-                    <li><a href="">Sitemap</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of use</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
         </div>

@@ -293,22 +293,30 @@ ul.top-menu li>ul>li>a:hover{
 
 [class*="customer"]{
     position: relative;
-    flex-flow: inherit;
+    flex-flow: row wrap;
     border: 1px solid #dedede;
     margin-bottom: 1em;
     border-radius: 5px;
 }
 
 [class*="customer"] .thumb{
-    flex:1 1 auto;
+    flex:1 1 0;
+}
+
+[class*="customer"] .thumb .rating{
+    text-align: center;
 }
 
 [class*="customer"] .thumb img{
-    width:50px;
+    width:100%;
+}
+
+.rated{
+    color:orange;
 }
 
 [class*="customer"] .response{
-    flex: 2 1 auto;
+    flex: 5 1 0;
     text-align: justify;
     padding-left: .5em;
     font-size: .85rem;
@@ -382,7 +390,9 @@ ul.top-menu li>ul>li>a:hover{
 }
 
 #btnSubmit:hover{
-    background-color:#880000 !important;
+    background-color:transparent !important;
+    color: #AE060E;
+    border:1px solid #AE060E;
     cursor:pointer;
 }
 
@@ -435,3 +445,91 @@ ul.top-menu li>ul>li>a:hover{
 .col-4 ul li:last-child{
     border:none;
 }
+
+
+/* GIFT CARD PAGES */
+
+.giftcard-content{
+    padding:2em;
+    color:#000;
+}
+
+.giftcard-content h1{
+    text-align:center;
+}
+
+..giftcard-content p{
+    text-align: justify;
+}
+
+#giftcard-frm{
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid #dedede;
+    padding: 2em;
+}
+
+#giftcard-frm label{
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+#giftcard-frm #amount{
+    position:relative;
+}
+
+#giftcard-frm #amount li{
+    display:inline-block;
+    border:1px solid #333;
+    padding: .3em;
+    margin-right:.2em;
+    cursor: pointer;
+}
+
+#giftcard-frm #amount li:last-child{
+    border:none;
+}
+
+#giftcard-frm #amount li input{
+    padding: 1.3em;
+    border: 1px solid #333;
+}
+
+#giftcard-frm input{
+    padding: 1.3em;
+    border: 1px solid #333;
+    margin: .5em .5em .5em 0;
+}
+
+#giftcard-frm textarea{
+    padding: 1.3em;
+    border: 1px solid #333;
+    width:525px;
+    margin: .5em .5em 0 0;
+}
+
+#giftcard-frm p{
+    font-size: .85rem;
+    font-style: italic;
+}
+
+
+#giftcard-frm #preview-btn{
+    background-color:#AE060E;
+    color:#fff;
+    border:none;
+    transition:all .5s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#giftcard-frm #preview-btn:hover{
+    background:transparent;
+    border:1px solid #AE060E;
+    color:#AE060E;
+}
+
+
+
+

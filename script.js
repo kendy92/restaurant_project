@@ -6,15 +6,18 @@ $(function(){
     
     //special dish random value
     var dishes = ["Mulligatowny Soup","Chicken Karahi","Chicken Jalfrezi","Mutton Home Style", "Beef Manalu"];
-    var randDish = dishes[Math.floor(Math.random() * dishes.length)];
-    $("#special-dish").text(randDish);
-    
+    //var randDish = dishes[Math.floor(Math.random() * dishes.length)];
     
     //slideshow
     $(".banner-section > .slideshow:gt(0)").hide();
     var delayTime = 1000;
-    
+    var count_dish = 0;
     setInterval(function(){
+        count_dish++;
+        if(count_dish >4){
+            count_dish = 0;
+        }
+       $("#special-dish").text(dishes[count_dish]);
        $(".banner-section > .slideshow:first")
         .fadeOut(delayTime)
         .next()
@@ -28,11 +31,11 @@ $(function(){
     $("[class*='menu']").hover(function(){
                                //in
         $(this).children("img").addClass("flipped");
-        $(this).children("h3").show();
+        $(this).children("h3").fadeIn(500);
                                },function(){
         //out
         $(this).children("img").removeClass("flipped");
-        $(this).children("h3").hide();
+        $(this).children("h3").fadeOut(500);
     });
    //hover effect in top navigation
     
