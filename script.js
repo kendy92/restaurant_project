@@ -1,6 +1,8 @@
+//update 03/01/2018
 $(function(){
    //init Date picker
     $("#datepicker").datepicker();
+    
     
     //special dish random value
     var dishes = ["Mulligatowny Soup","Chicken Karahi","Chicken Jalfrezi","Mutton Home Style", "Beef Manalu"];
