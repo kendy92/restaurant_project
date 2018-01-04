@@ -530,6 +530,104 @@ ul.top-menu li>ul>li>a:hover{
     color:#AE060E;
 }
 
+/* BOOKING PAGE */
+.booking-content{
+    padding:2em;
+    color:#000;
+}
+
+.booking-content h1{
+    text-align: center;
+}
+
+#booking-frm{
+    width: 80%;
+    border:1px solid #333;
+    margin: 1em auto;
+    padding:2em;
+}
+
+#booking-frm label{
+    display:inline-block;
+    width:150px;
+}
+
+#booking-frm input, #booking-frm select, #booking-frm textarea{
+    width:80%;
+    margin:.5em;
+    padding:.5em;
+    border:1px solid #dedede;
+}
+
+#booking-frm input, #booking-frm select{
+    height: 40px;
+}
+
+#booking-frm textarea{
+    height:100px;
+}
+
+#booking-frm #venue{
+    display:flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom:.5em;
+}
+
+#booking-frm input[type="checkbox"]{
+    width: 30px !important;
+    margin: 0 !important;
+    height: 12px !important;
+}
+#booking-frm #venue li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+#booking-frm #venue li img{
+    width:100px;
+    height:70px;
+}
+
+#bookbtn{
+    width: 100px !important;
+    display: block;
+    margin: 0 auto !important;
+}
+
+#booking-frm p{
+    font-size:.85em;
+    font-style:italic;
+}
+
+#booking-frm div:last-child{
+    text-align: center;
+}
+
+#btnsubmit{
+    width: 140px !important;
+    background:transparent;
+    border:1px solid #AE060E !important;
+    color:#AE060E;
+    transition:all .5s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#btnsubmit:hover{
+    background-color:#AE060E;
+    color:#fff;
+}
+
+.full-size-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 85% !important;
+    cursor: pointer;
+}
+
 
 
 
