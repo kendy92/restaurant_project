@@ -2,6 +2,36 @@ $(function(){
    //init Date picker
     $("#datepicker").datepicker();
     
+    //special dish random value
+    var dishes = ["Mulligatowny Soup","Chicken Karahi","Chicken Jalfrezi","Mutton Home Style", "Beef Manalu"];
+    var randDish = dishes[Math.floor(Math.random() * dishes.length)];
+    $("#special-dish").text(randDish);
+    
+    
+    //slideshow
+    $(".banner-section > .slideshow:gt(0)").hide();
+    var delayTime = 1000;
+    
+    setInterval(function(){
+       $(".banner-section > .slideshow:first")
+        .fadeOut(delayTime)
+        .next()
+        .fadeIn(delayTime)
+        .end()
+        .appendTo(".banner-section");
+    }, 3000);
+    
+    
+    //menu box flip effect
+    $("[class*='menu']").hover(function(){
+                               //in
+        $(this).children("img").addClass("flipped");
+        $(this).children("h3").show();
+                               },function(){
+        //out
+        $(this).children("img").removeClass("flipped");
+        $(this).children("h3").hide();
+    });
    //hover effect in top navigation
     
     var screen_width = $(window).width();
@@ -38,4 +68,14 @@ $(function(){
             $("ul.top-menu").finish().slideDown('medium');
         }
     });
+    
+    //Fix the navigation menu disappear when scroolling to different screen size
+    window.onresize = function(){
+    var screenW = window.innerWidth;
+    if(screenW > 780){
+        $("ul.top-menu").css('display','flex');
+    }else{
+        $("ul.top-menu").css('display','none');
+    }
+}
 });
