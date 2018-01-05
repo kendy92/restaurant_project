@@ -22,3 +22,7 @@ Team Member:
 
 - Update content in homepage
 - Add giftcard page
+
+04/01/2018:
+
+- Add booking page
