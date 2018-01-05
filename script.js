@@ -31,11 +31,11 @@ $(function(){
     $("[class*='menu']").hover(function(){
                                //in
         $(this).children("img").addClass("flipped");
-        $(this).children("h3").fadeIn(500);
+        $(this).children("a").fadeIn(500);
                                },function(){
         //out
         $(this).children("img").removeClass("flipped");
-        $(this).children("h3").fadeOut(500);
+        $(this).children("a").fadeOut(500);
     });
     
     //validation booking form
@@ -173,21 +173,21 @@ $(function(){
     var screen_width = $(window).width();
         if(screen_width > 1024){
         
-             $("ul.top-menu li").hover(
+             $("ul.top-nav li").hover(
                 function(){
-                    $(this).children("ul.child-menu").finish().slideDown('medium');
+                    $(this).children("ul.child-nav").finish().slideDown('medium');
                 },function(){
-                    $(this).children("ul.child-menu").finish().slideUp('medium');
+                    $(this).children("ul.child-nav").finish().slideUp('medium');
                 });
             
         }else{
             var count = 0;
-            $("ul.top-menu li").on('click',function(){
+            $("ul.top-nav li").on('click',function(){
                 count++;
                 if(count % 2 == 0){
-                    $(this).children("ul.child-menu").finish().slideUp('medium');
+                    $(this).children("ul.child-nav").finish().slideUp('medium');
                 }else{
-                    $(this).children("ul.child-menu").finish().slideDown('medium');
+                    $(this).children("ul.child-nav").finish().slideDown('medium');
                 }
                 return false;
             });
@@ -199,9 +199,9 @@ $(function(){
     $(".toggleBtn").on("click",function(){
         count_click++;
         if(count_click % 2 == 0){
-            $("ul.top-menu").finish().slideUp('medium');
+            $("ul.top-nav").finish().slideUp('medium');
         }else{
-            $("ul.top-menu").finish().slideDown('medium');
+            $("ul.top-nav").finish().slideDown('medium');
         }
     });
     
@@ -209,9 +209,9 @@ $(function(){
     window.onresize = function(){
     var screenW = window.innerWidth;
     if(screenW > 780){
-        $("ul.top-menu").css('display','flex');
+        $("ul.top-nav").css('display','flex');
     }else{
-        $("ul.top-menu").css('display','none');
+        $("ul.top-nav").css('display','none');
     }
 }
 });

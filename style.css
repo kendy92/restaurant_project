@@ -75,7 +75,7 @@ a.btn-contest:hover{
     color:#000;
 }
 
-ul.top-menu{
+ul.top-nav{
     background-color: #AE060E;
     position:relative;
     display: flex;
@@ -83,18 +83,18 @@ ul.top-menu{
     justify-content: space-around;
 }
 
-ul.top-menu li a{
+ul.top-nav li a{
     display:block;
     padding:1em;
     flex: 1 1 0;
 }
 
-ul.top-menu li a:hover{
+ul.top-nav li a:hover{
     background-color:#fff;
     color:#AE060E;
 }
 
-ul.top-menu li ul{
+ul.top-nav li ul{
     display:none;
     position:absolute;
     padding:0;
@@ -103,13 +103,13 @@ ul.top-menu li ul{
     z-index:9999;
 }
 
-ul.top-menu li ul li a{
+ul.top-nav li ul li a{
     display:block;
     padding:1em;
     width:144px;
 }
 
-ul.top-menu li>ul>li>a:hover{
+ul.top-nav li>ul>li>a:hover{
     background-color:#fff;
     color: #AE060E;   
 }
@@ -231,13 +231,15 @@ ul.top-menu li>ul>li>a:hover{
     transition:all .5s ease;
 }
 
-[class*="menu"] h3{
+[class*="menu"] a{
     position: absolute;
     top: 0;
+    left:0;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     height: 100%;
     color: #fff;
+    font-weight:bold;
     padding-top: 1em;
     display:none;
     cursor: pointer;
