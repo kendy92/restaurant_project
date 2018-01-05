@@ -110,6 +110,58 @@ $(function(){
     });
     
     
+    //preview giftcard
+    var get_amt = 0;
+    $("#amount li").on('click', function(){
+        $("#amount_value").val("");
+        get_amt = $(this).attr("data");
+        $(this).siblings().css({"background-color":"transparent", "color":"#000"});
+        $(this).css({"background-color":"#AE060E","color":"#fff"});
+    });
+    
+    $("#preview-btn").on('click',function(){
+        var sender = $("#sender_name").val();
+        var recipient = $("#recipient_name").val();
+        var custom_amt = $("#amount_value").val();
+        var email = $("#recipient_email").val();
+        var msg = $("#message").val();
+        var quantity = $("#quantity").val();
+        var checkbox1 = $("#checkbox1").prop("checked");
+        var checkbox2 = $("#checkbox2").prop("checked");
+        
+        if(get_amt === 0 && custom_amt === ""){
+            alert("Please select or enter custom amount of giftcard!");
+            return false;
+        }else if(recipient === ""){
+            alert("Please enter recipient name!");
+            return false;
+        }else if(email === ""){
+            alert("Please enter recipient email!");
+            return false;
+        }else if(msg === ""){
+            alert("Please enter message to recipient!");
+            return false;
+        }else if(quantity < 1){
+            alert("Minimum order is 1");
+        }else if(checkbox1 === false || checkbox2 === false){
+            alert("Please check all the agreement!");
+            return false;
+        }else{
+            $(".giftcard-preview").fadeIn(500);
+            var d= new Date();
+            var expire_date = d.getDate() + "/" + (d.getUTCMonth() + 2) + "/" + d.getFullYear();
+            $(".date").text("Expired on " + expire_date);
+            $(".giftcard_recipient").text("Dear " + recipient);
+            $(".message").text(msg);
+            if(custom_amt === ""){
+                $(".giftcard_amt").text("$" + get_amt);
+            }else{
+                $(".giftcard_amt").text("$" + custom_amt);
+            }
+            
+            $(".giftcard_sender").html("<p>Loads of love</p><p>"+sender+"</p>")
+        }
+    });
     
     
     

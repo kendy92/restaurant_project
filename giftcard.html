@@ -63,41 +63,59 @@
             <div>
             <ul id="amount">
                 <label for="amount">Amount</label>
-                <li>CDN $25</li>
-                <li>CDN $50</li>
-                <li>CDN $75</li>
-                <li>CDN $100</li>
+                <li data="25">CDN $25</li>
+                <li data="50">CDN $50</li>
+                <li data="75">CDN $75</li>
+                <li data="100">CDN $100</li>
                 <li><input type="text" id="amount_value" placeholder="Enter amount"></li>
             </ul>
             </div>
             <div>
+                <label for="sender_name">From</label>
+                <input type="text" id="sender_name" placeholder="Enter your name" required>
+            </div>
+            <div>
                 <label for="recipient_name">To</label>
-                <input type="text" id="recipient_name" placeholder="Enter recipient name">
-                <input type="email" id="recipient_email" placeholder="Enter recipient email">
+                <input type="text" id="recipient_name" placeholder="Enter recipient name" required>
+                <input type="email" id="recipient_email" placeholder="Enter recipient email" required>
             </div>
             <div>
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Hope you enjoy the meal at Saffron Restaurant"></textarea>
+                <textarea id="message" placeholder="Enter message to recipient"></textarea>
                 <p>Maximum 200 characters.</p>
             </div>
             <div>
                 <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" placeholder="1" value="1">
+                <input type="number" id="quantity" placeholder="1" value="1" required>
             </div>
             <div>
-                <input id="checkBox" type="checkbox">I accept all Terms & Conditions of Saffron Restaurant eGift Card
+                <input id="checkbox1" type="checkbox">I accept all Terms & Conditions of Saffron Restaurant eGift Card
             </div>
             <div>
-                <input id="checkBox" type="checkbox">Yes, sign-me up for daily specials at Saffron Restaurant
+                <input id="checkbox2" type="checkbox">Yes, sign-me up for daily specials at Saffron Restaurant
             </div>
             
-            <input type="button" id="preview-btn" value="Preview Gift Card">
+            <div>
+                <input type="button" id="preview-btn" class="special-btn" value="Preview Gift Card">
+                 <input type="button" id="buynow-btn" class="special-btn" value="Buy Now">
+            </div>
             
         </form>
     </div> 
         
     <div class="giftcard-preview">
-        
+        <div class="logo">
+        <img src="images/restaurant-logo.png">
+        </div>
+        <div class="giftcard-preview-content">
+            <div class="date"></div>
+            <div class="giftcard_recipient"></div>
+            <div class="message"></div>
+            <div class="flex-container">
+                <div class="giftcard_amt"></div>
+                <div class="giftcard_sender"></div>
+            </div>
+        </div>
     </div>
     </main>
     

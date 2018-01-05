@@ -514,20 +514,51 @@ ul.top-menu li>ul>li>a:hover{
     font-style: italic;
 }
 
+#giftcard-frm div:last-child{
+    text-align: center;
+}
 
-#giftcard-frm #preview-btn{
-    background-color:#AE060E;
-    color:#fff;
-    border:none;
+
+#giftcard-frm .special-btn{
+    background:transparent;
+    border:1px solid #AE060E;
+    color:#AE060E;
     transition:all .5s ease;
     cursor: pointer;
     text-transform: uppercase;
 }
 
-#giftcard-frm #preview-btn:hover{
-    background:transparent;
-    border:1px solid #AE060E;
-    color:#AE060E;
+#giftcard-frm .special-btn:hover{
+    background-color:#AE060E;
+    color:#fff;
+}
+
+
+.giftcard-preview{
+    display:none;
+    width:500px;
+    margin: .5em auto;
+    background-color:#000;
+    padding:1em;
+    border-radius: 5px;
+}
+
+.giftcard-preview .logo{
+    text-align:center;
+}
+
+.giftcard-preview .giftcard-preview-content .giftcard_amt{
+    text-align: left;
+    flex: 1 1 auto;
+    font-size: 2.5rem;
+    margin-top: .5em;
+    font-weight: bold;
+}
+
+.giftcard-preview .giftcard-preview-content .giftcard_sender{
+    flex: 1 1 auto;
+    text-align: right;
+    margin-top: 1em;
 }
 
 /* BOOKING PAGE */
