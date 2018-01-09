@@ -82,11 +82,17 @@ $(function(){
        $("#selected-venue").text("You have select " + get_venue + " venue.");
     });
     
-    $("#venue li img").hover(function(){
-        $(this).addClass("full-size-img");
-    }, function(){
-        $(this).removeClass("full-size-img");
+    $("#venue li .thumbnail-venue img").on('click',function(){
+        $(".zoom-thumbnail").css("display","block");
+        var url = $(this).attr("src");
+        $(".zoom-thumbnail img").attr("src",url);
     });
+    
+    $(".zoom-thumbnail .close-btn").on('click',function(){
+       $(".zoom-thumbnail").fadeOut(500); 
+    });
+    
+    
     
     $("#btnsubmit").on('click',function(){
         var ename = $("#eventname").val();
@@ -144,7 +150,7 @@ $(function(){
             return false;
         }else{
             alert("Thanks for booking event with us. We will contact you soon!");
-            return true;
+            $(location).attr('href', 'index.html');
         }
         
         
