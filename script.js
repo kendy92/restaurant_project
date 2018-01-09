@@ -116,8 +116,12 @@ $(function(){
             alert("Please select venue to operate event!");
             $("#venue").focus();
             return false;
-        }else if(ebudget === ""){
+        }else if(ebudget === "" || isNaN(ebudget)){
             alert("Please enter your budget!");
+            $("#budget").focus();
+            return false;
+        }else if(ebudget < 100){
+            alert("The minimum budget is $100!");
             $("#budget").focus();
             return false;
         }else if(econtactname === ""){
