@@ -48,6 +48,7 @@ $(function(){
         var date = $("#datepicker").val();
         var time = $("#time").val();
         var groupsize = $("#group_size").val();
+        var location = $("#location").val();
         
         if(name === ""){
             alert("Please enter your name!");

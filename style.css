@@ -367,7 +367,7 @@ ul.top-nav li>ul>li>a:hover{
     padding-left: 2.3em;
 }
 
-#reserveFrm input, #reserveFrm #time, #reserveFrm #group_size{
+#reserveFrm input, #reserveFrm #time, #reserveFrm #group_size, #reserveFrm #location{
     width:300px;
     height: 30px;
     padding:.5em;
