@@ -124,7 +124,7 @@ ul.top-nav li>ul>li>a:hover{
 
 .banner-section{
     position:relative;
-    height:400px;
+    height:450px;
 }
 
 .banner-section .slideshow{
@@ -139,12 +139,12 @@ ul.top-nav li>ul>li>a:hover{
     width:100%;
     background-attachment:scroll;
     background-size: cover;
-    height:400px;
+    height:450px;
 }
 
 .special-section{
     width:100%;
-    padding:2em;
+    padding:.5em 3em;
     position:absolute;
     bottom:0;
     background-color: rgba(0,0,0,0.5);
@@ -153,41 +153,50 @@ ul.top-nav li>ul>li>a:hover{
 }
 
 .special-section h2{
-    flex:1 1 auto;
+    flex:1 1 70px;
 }
 
 .special-section #special-dish{
     flex:8 1 auto;
     text-align:left;
+    color: #7CFF0A;
 }
 
 .about-us{
-    padding:2em;
+    padding:3em;
     text-align:justify;
+    width:100%;
+    margin: 0 auto;
+}
+
+.about-us img{
+    margin: 0 48%;
+    width:25px;
+}
+
+.about-us p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    padding: 0.75em 0;
+}
+
+.about-us h1{
+    color: #100e0f;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
 }
 
 .about-us a{
-    color:#AC0C18;
-}
-
-.btn-giftcard{
     display: block;
-    width: 160px;
+    width: 350px;
     text-align: center;
-    font-size: .95rem;
-    padding: .5em;
-    border-radius: 5px;
-    color: #fff !important;
-    background-color: #AC0C18;
-    transition:all .5s ease;
+    margin: 0 auto;
 }
 
-.btn-giftcard:hover{
-    background:transparent;
-    color:#AC0C18 !important;
-    border:1px solid #AC0C18;
-    border-radius:5px;
-}
 
 .features{
     background-color:#AE060E;
@@ -196,11 +205,11 @@ ul.top-nav li>ul>li>a:hover{
 .thumbnail{
     text-align:center;
     flex: 1 1 0;
-    padding: 0 2em 0 2em;
+    padding: 0 3em;
 }
 
 .thumbnail img{
-    width: 100px;
+    width: 75px;
 }
 
 .thumbnail h3{
@@ -209,41 +218,69 @@ ul.top-nav li>ul>li>a:hover{
 }
 
 .thumbnail p{
-    color:#fff;
-    text-align:center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
 }
 
 .food-list{
-    width:100%;
-    text-align:center;
+    display:flex;
+    flex-flow: row wrap;
+    align-content: space-between;
 }
 
-[class*="menu"]{
-    padding:.2em;
+.menu, .double-menu{
+    flex:1 1 0;
+    padding:.5em;
     position:relative;
 }
 
-[class*="menu"] img{
-    width:100%;
-    height:100%;
-    filter: contrast(80%);
-    cursor:pointer;
-    transition:all .5s ease;
+.double-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-[class*="menu"] a{
+.child-menu{
+    position:relative;
+    flex:1 1 auto;
+}
+
+.menu a, .child-menu a{
+    text-transform: uppercase;
     position: absolute;
-    top: 0;
-    left:0;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: block;
+    color: #d8c266;
+    text-decoration: none;
+    z-index: 222;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    padding-left: .5em;
     height: 100%;
-    color: #fff;
-    font-weight:bold;
     padding-top: 1em;
-    display:none;
+}
+
+.menu img, .child-menu img{
+    width:100%;
+    filter: brightness(60%);
+}
+
+.child-menu img{
+    height:270px;
+}
+
+.menu, .child-menu{
     cursor: pointer;
 }
+
+.menu:hover, .child-menu:hover{
+    bottom:5px;
+}
+
+
 
 .flipped{
     transform: scale(-1, 1);
@@ -254,42 +291,10 @@ ul.top-nav li>ul>li>a:hover{
     -ms-transform: scale(-1, 1);
 }
 
-.breakfast-menu{
-    width:25%;
-    height:250px;
-    float:left;
-    padding-left:0;
-}
-
-
-.lunch-menu{
-    width:25%;
-    height:100px;
-    float:left;
-    
-}
-.desserts-menu{
-    width:25%;
-    height:100px;
-    float:left;
-}
-
-.dinner-menu{
-    width:50%;
-    height:150px;
-    float:left;
-}
-
-.drinks-menu{
-    width: 25%;
-    height:250px;
-    display:inline-block;
-    padding-right:0;
-}
 
 .contact-us{
     clear:both;
-    padding:2em;
+    padding:3em;
 }
 
 [class*="customer"]{
@@ -310,6 +315,7 @@ ul.top-nav li>ul>li>a:hover{
 
 [class*="customer"] .thumb img{
     width:100%;
+    border-radius: 100px;
 }
 
 .rated{
@@ -328,6 +334,11 @@ ul.top-nav li>ul>li>a:hover{
 
 .feed-back{
     flex: 2 1 0;
+    padding-right: 1em;
+}
+
+.feed-back h2{
+    margin-bottom:1em;
 }
 
 .reservation-form{
@@ -345,7 +356,7 @@ ul.top-nav li>ul>li>a:hover{
     padding:.2em;
     position:absolute;
     top:-20px;
-    left:67px;
+    left:55px;
     width:300px;
 }
 
@@ -354,10 +365,10 @@ ul.top-nav li>ul>li>a:hover{
 }
 
 #reserveFrm label{
-    display:block;
-    text-align:left;
-    color:#585858;
-    padding-left:3em;
+    display: block;
+    text-align: left;
+    color: #585858;
+    padding-left: 2.3em;
 }
 
 #reserveFrm input, #reserveFrm #time, #reserveFrm #group_size{
@@ -407,6 +418,10 @@ ul.top-nav li>ul>li>a:hover{
 }
 
 #footer a{
+    color:#dedede;
+}
+
+#footer a:hover{
     color:#fff;
 }
 
@@ -447,11 +462,25 @@ ul.top-nav li>ul>li>a:hover{
     border:none;
 }
 
+ul.advertise{
+    display:flex;
+    flex-flow:column wrap;
+}
+
+ul.advertise li{
+    flex:1 1 auto;
+    margin-bottom:.5em;
+}
+
+ul.advertise li img{
+    width:120px;
+}
+
 
 /* GIFT CARD PAGES */
 
 .giftcard-content{
-    padding:2em;
+    padding:3em;
     color:#000;
 }
 
@@ -466,8 +495,9 @@ ul.top-nav li>ul>li>a:hover{
 #giftcard-frm{
     margin: 0 auto;
     width: 80%;
-    border: 1px solid #dedede;
     padding: 2em;
+    background-color: #AE060E;
+    color: #fff;
 }
 
 #giftcard-frm label{
@@ -482,7 +512,7 @@ ul.top-nav li>ul>li>a:hover{
 
 #giftcard-frm #amount li{
     display:inline-block;
-    border:1px solid #333;
+    border:1px solid #fff;
     padding: .3em;
     margin-right:.2em;
     cursor: pointer;
@@ -494,18 +524,18 @@ ul.top-nav li>ul>li>a:hover{
 
 #giftcard-frm #amount li input{
     padding: 1.3em;
-    border: 1px solid #333;
+    border: 1px solid #fff;
 }
 
 #giftcard-frm input{
     padding: 1.3em;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     margin: .5em .5em .5em 0;
 }
 
 #giftcard-frm textarea{
     padding: 1.3em;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     width:525px;
     margin: .5em .5em 0 0;
 }
@@ -521,16 +551,16 @@ ul.top-nav li>ul>li>a:hover{
 
 
 #giftcard-frm .special-btn{
-    background:transparent;
-    border:1px solid #AE060E;
-    color:#AE060E;
-    transition:all .5s ease;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all .5s ease;
     cursor: pointer;
     text-transform: uppercase;
 }
 
 #giftcard-frm .special-btn:hover{
-    background-color:#AE060E;
+    background-color:rgba(0,0,0,0.09);
     color:#fff;
 }
 
@@ -564,7 +594,7 @@ ul.top-nav li>ul>li>a:hover{
 
 /* BOOKING PAGE */
 .booking-content{
-    padding:2em;
+    padding:3em;
     color:#000;
 }
 
@@ -574,9 +604,10 @@ ul.top-nav li>ul>li>a:hover{
 
 #booking-frm{
     width: 80%;
-    border:1px solid #333;
     margin: 1em auto;
-    padding:2em;
+    padding: 2em;
+    background-color: #AE060E;
+    color: #fff;
 }
 
 #booking-frm label{
@@ -638,16 +669,16 @@ ul.top-nav li>ul>li>a:hover{
 
 #btnsubmit{
     width: 140px !important;
-    background:transparent;
-    border:1px solid #AE060E !important;
-    color:#AE060E;
-    transition:all .5s ease;
+    background: transparent;
+    border: 1px solid #fff !important;
+    color: #fff;
+    transition: all .5s ease;
     cursor: pointer;
     text-transform: uppercase;
 }
 
 #btnsubmit:hover{
-    background-color:#AE060E;
+    background-color:rgba(0,0,0,0.09);
     color:#fff;
 }
 
@@ -661,5 +692,93 @@ ul.top-nav li>ul>li>a:hover{
 }
 
 
+/* animate button */
+.btn {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #000 !important;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+    background-color:rgba(0,0,0,0.09);
+}
+
+.btn::before, .btn::after{
+  content:"";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #555;
+}
+
+.btn:hover::before, .btn:hover::after{
+  width: 100%;
+}
+.btn:hover span::before, .btn:hover span::after{
+  height: 100%;
+}
+
+.btn span::before, .btn span::after{
+  content:"";
+  width:1px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #555;
+}
+
+.btn span{
+  display: block;
+  padding: 25px 80px;
+  text-transform: uppercase;
+}
+
+.btn-animated::after{
+  left:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-animated span::after{
+  right:0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-animated::before{
+  right: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-animated span::before{
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+#backToTop{
+   position:fixed;
+   right:30px;
+   bottom:30px;
+   z-index:999;
+}
+
+#backToTop a{
+    min-width: 50px;
+    padding: .3em;
+    vertical-align: bottom;
+    background-color: #f9f9f9;
+    font-size: 2em;
+    line-height: 0;
+    color:#333;
+    text-align: center;
+    display:inline-block;
+    border: 1px solid #303030;
+}
+
+#backToTop a:hover{
+    color:#000;
+}
 
 

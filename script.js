@@ -1,12 +1,25 @@
 //update 04/01/2018
 $(function(){
-   //init Date picker
+    
+    //init Date picker
     $("#datepicker").datepicker();
     $("#eventdate").datepicker();
     
+    //scroll to top
+    $('#backToTop').on('click',function(){
+       $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+    
+    
+    //top navigation
+    $(".top-nav li").hover(function(){
+       $(this).children(".child-nav").slideDown(500);
+    }, function(){
+        $(this).children(".child-nav").slideUp(500);
+    });
+    
     //special dish random value
     var dishes = ["Mulligatowny Soup","Chicken Karahi","Chicken Jalfrezi","Mutton Home Style", "Beef Manalu"];
-    //var randDish = dishes[Math.floor(Math.random() * dishes.length)];
     
     //slideshow
     $(".banner-section > .slideshow:gt(0)").hide();
@@ -26,16 +39,40 @@ $(function(){
         .appendTo(".banner-section");
     }, 3000);
     
-    
-    //menu box flip effect
-    $("[class*='menu']").hover(function(){
-                               //in
-        $(this).children("img").addClass("flipped");
-        $(this).children("a").fadeIn(500);
-                               },function(){
-        //out
-        $(this).children("img").removeClass("flipped");
-        $(this).children("a").fadeOut(500);
+   
+    //validation reserve table form
+    $(".btnReserve").on('click',function(){
+        var name = $("#name").val();
+        var phone = $("#phone").val();
+        var date = $("#datepicker").val();
+        var time = $("#time").val();
+        var groupsize = $("#group_size").val();
+        
+        if(name === ""){
+            alert("Please enter your name!");
+            $("#name").focus();
+            return false;
+        }else if(phone === ""){
+            alert("Please enter your phone number!");
+            $("#phone").focus();
+            return false;
+        }else if(date === ""){
+            alert("Please choose a date!");
+            $("#datepicker").focus();
+            return false;
+        }else if(time === ""){
+            alert("Please choose time to reserve!");
+            $("#time").focus();
+            return false;
+        }else if(time === ""){
+            alert("Please choose group size!");
+            $("#group_size").focus();
+            return false;
+        }else{
+            alert("Thanks for reserving table with us. We will contact you soon!");
+            return true;
+        }
+        
     });
     
     //validation booking form
@@ -115,8 +152,8 @@ $(function(){
     $("#amount li").on('click', function(){
         $("#amount_value").val("");
         get_amt = $(this).attr("data");
-        $(this).siblings().css({"background-color":"transparent", "color":"#000"});
-        $(this).css({"background-color":"#AE060E","color":"#fff"});
+        $(this).siblings().css({"background-color":"transparent", "color":"#fff"});
+        $(this).css({"background-color":"rgba(0,0,0,0.3)","color":"#fff"});
     });
     
     $("#preview-btn").on('click',function(){
@@ -164,54 +201,59 @@ $(function(){
     });
     
     
+    //show on scroll effect
+    var windowHeight, windowScrollPos, currentPos, objectOffsetTop;
     
-    
-    
-    
-   //hover effect in top navigation
-    
-    var screen_width = $(window).width();
-        if(screen_width > 1024){
-        
-             $("ul.top-nav li").hover(
-                function(){
-                    $(this).children("ul.child-nav").finish().slideDown('medium');
-                },function(){
-                    $(this).children("ul.child-nav").finish().slideUp('medium');
-                });
+    $.fn.showOnScroll = function(direction, speed){
+        return $(this).each(function(){
+            objectOffsetTop = $(this).offset().top;
             
-        }else{
-            var count = 0;
-            $("ul.top-nav li").on('click',function(){
-                count++;
-                if(count % 2 == 0){
-                    $(this).children("ul.child-nav").finish().slideUp('medium');
+            if(!$(this).hasClass("hidden")){
+                if(direction == "right"){
+                    $(this).css({
+                           "opacity"	: 0,
+                            "right"		: "1000px",
+                            "position"	: "relative" 
+                    });
                 }else{
-                    $(this).children("ul.child-nav").finish().slideDown('medium');
+                    $(this).css({
+                           "opacity"	: 0,
+                            "right"		: "-1000px",
+                            "position"	: "relative" 
+                    });
                 }
-                return false;
-            });
-        }
+                $(this).addClass("hidden");
+            }
+            
+            if(!$(this).hasClass("animated")){
+                    if(currentPos > objectOffsetTop){
+                        $(this).animate({
+                            "opacity": 1,
+                            "right": 0
+                        },speed).addClass("animated");
+                    }
+            }
+        });
+    }
     
-    
-    //toggleBtn for mobile and tablet version
-    var count_click = 0;
-    $(".toggleBtn").on("click",function(){
-        count_click++;
-        if(count_click % 2 == 0){
-            $("ul.top-nav").finish().slideUp('medium');
-        }else{
-            $("ul.top-nav").finish().slideDown('medium');
-        }
+    $(window).scroll(function(){
+        windowHeight = $(window).height();
+        windowScrollPos = $(window).scrollTop();
+        currentPos = windowHeight + windowScrollPos;
+        
+        $(".about-us").showOnScroll("left",1000);
+        $(".thumbnail:nth-child(1)").showOnScroll("right",1000);
+        $(".thumbnail:nth-child(2)").showOnScroll("left",1000);
+        $(".thumbnail:nth-child(3)").showOnScroll("right",1000);
+        
+        $(".menu:nth-child(2n)").showOnScroll("left",1000);
+        $(".menu:nth-child(2n+1)").showOnScroll("right",1000);
+        
+        $(".customer-1").showOnScroll("left",1500);
+        $(".customer-2").showOnScroll("right",1800);
+        $(".customer-3").showOnScroll("left",2100);
+        $(".reservation-form").showOnScroll("left",2300);
     });
     
-    //Fix the navigation menu disappear when scroolling to different screen size
-    window.onresize = function(){
-    var screenW = window.innerWidth;
-    if(screenW > 780){
-        $("ul.top-nav").css('display','flex');
-    }else{
-        $("ul.top-nav").css('display','none');
-    }
-}
+    
 });
