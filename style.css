@@ -46,10 +46,6 @@ ul, li{
     width:200px;
 }
 
-.toggleBtn{
-    display:none;
-}
-
 .contact-top{
     flex: 2 1 0;
     display:flex;

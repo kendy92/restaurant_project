@@ -1,4 +1,5 @@
-//update 04/01/2018
+//update 09/01/2018
+//Coded by Lee
 $(function(){
     
     //init Date picker
@@ -83,7 +84,7 @@ $(function(){
     });
     
     $("#venue li .thumbnail-venue img").on('click',function(){
-        $(".zoom-thumbnail").css("display","block");
+        $(".zoom-thumbnail").fadeIn(500);
         var url = $(this).attr("src");
         $(".zoom-thumbnail img").attr("src",url);
     });
@@ -258,10 +259,10 @@ $(function(){
         
         $(".menu:nth-child(2n)").showOnScroll("left",1000);
         $(".menu:nth-child(2n+1)").showOnScroll("right",1000);
+        $(".double-menu .child-menu").showOnScroll("right",1000);
         
-        $(".customer-1").showOnScroll("left",1500);
-        $(".customer-2").showOnScroll("right",1800);
-        $(".customer-3").showOnScroll("left",2100);
+        $(".customer:nth-child(2n+1)").showOnScroll("left",1000);
+        $(".customer:nth-child(2n)").showOnScroll("right",1200);
         $(".reservation-form").showOnScroll("left",2300);
     });
     
