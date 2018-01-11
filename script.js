@@ -94,7 +94,7 @@ $(function(){
        $(".zoom-thumbnail").fadeOut(500); 
     });
     
-    
+    //trigger submit btn
     
     $("#btnsubmit").on('click',function(){
         var ename = $("#eventname").val();
@@ -122,7 +122,7 @@ $(function(){
             return false;
         }else if(venue === ""){
             alert("Please select venue to operate event!");
-            $("#venue").focus();
+            $("#bookbtn").focus();
             return false;
         }else if(ebudget === "" || isNaN(ebudget)){
             alert("Please enter your budget!");
@@ -180,23 +180,34 @@ $(function(){
         
         if(get_amt === 0 && custom_amt === ""){
             alert("Please select or enter custom amount of giftcard!");
+            $("#amount_value").focus();
+            return false;
+        }else if(sender === ""){
+            alert("Please enter sender name!");
+            $("#sender_name").focus();
             return false;
         }else if(recipient === ""){
             alert("Please enter recipient name!");
+            $("#recipient_name").focus();
             return false;
         }else if(email === ""){
             alert("Please enter recipient email!");
+            $("#recipient_email").focus();
             return false;
         }else if(msg === ""){
             alert("Please enter message to recipient!");
+            $("#message").focus();
             return false;
         }else if(quantity < 1){
             alert("Minimum order is 1");
+            $("#quantity").focus();
+            return false;
         }else if(checkbox1 === false || checkbox2 === false){
             alert("Please check all the agreement!");
             return false;
         }else{
             $(".giftcard-preview").fadeIn(500);
+            $(window).scrollTop($(".giftcard-preview").offset().top);
             var d= new Date();
             var expire_date = d.getDate() + "/" + (d.getUTCMonth() + 2) + "/" + d.getFullYear();
             $(".date").text("Expired on " + expire_date);
