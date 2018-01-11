@@ -1,7 +1,8 @@
 ## RESTAURANT GROUP PROJECT
-> Group Project for Web Programming
-This is group project for Web Programming Subject
-Submision Deadline: 
+
+Group Project for Web Programming
+**Submision Deadline: 14/01/2018**
+
 **Team Member:** 
 - **Yuriy Iakymenko:** Location, inquiry pages
 - **Sviatoslav Tokariev:** Contest, Career
