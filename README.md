@@ -1,13 +1,15 @@
-# restaurant_project
-Group Project for Web Programming
+## RESTAURANT GROUP PROJECT
+> Group Project for Web Programming
 This is group project for Web Programming Subject
+Submision Deadline: 
+**Team Member:** 
+- **Yuriy Iakymenko:** Location, inquiry pages
+- **Sviatoslav Tokariev:** Contest, Career
+- **Rajanveer Brar:** About us, Contents of website
+- **Thang Cong Dinh:** Homepage, booking, giftcard
+- **Aqs Malhotra:** Menu, Special, Contact us
 
-Team Member: 
-- Iurii Iakymenko 
-- Sviatoslav Tokariev 
-- Rajanveer Brar
-- Thang Cong Dinh
-- Aqs Malhotra
+**Temp website:** https://team4-webproject.herokuapp.com/index.html
 
 06/12/2017:
 - Upload project files to git hub
