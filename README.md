@@ -1,13 +1,15 @@
 ## RESTAURANT GROUP PROJECT
-> Group Project for Web Programming
-This is group project for Web Programming Subject
-Submision Deadline: 
+
+_**Group Project for Web Programming**_
+
+**Submision Deadline: 14/01/2018**
+
 **Team Member:** 
 - **Yuriy Iakymenko:** Location, inquiry pages
-- **Sviatoslav Tokariev:** Contest, Career
-- **Rajanveer Brar:** About us, Contents of website
-- **Thang Cong Dinh:** Homepage, booking, giftcard
-- **Aqs Malhotra:** Menu, Special, Contact us
+- **Sviatoslav Tokariev:** Contest, Career pages
+- **Rajanveer Brar:** About us, Contents of website 
+- **Thang Cong Dinh:** Homepage, Booking, Gift-card pages
+- **Aqs Malhotra:** Menu, Special, Sitemap pages
 
 **Temp website:** https://team4-webproject.herokuapp.com/index.html
 
