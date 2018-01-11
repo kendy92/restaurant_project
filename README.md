@@ -8,6 +8,7 @@ Submision Deadline:
 - **Rajanveer Brar:** About us, Contents of website
 - **Thang Cong Dinh:** Homepage, booking, giftcard
 - **Aqs Malhotra:** Menu, Special, Contact us
+
 **Temp website:** https://team4-webproject.herokuapp.com/index.html
 
 06/12/2017:
