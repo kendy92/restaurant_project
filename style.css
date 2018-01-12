@@ -825,6 +825,28 @@ ul.advertise li img{
     padding: 0.75em 5em 2em 5em;
 }
 
+/* POLICY & DISCLAIMER PAGE */
+
+.policy-content, .disclaimer-content{
+    color:#333;
+    padding:3em;
+}
+
+.policy-content h2, .disclaimer-content h1{
+    margin: 1em 0;
+}
+
+.policy-content h1{
+    text-align: center;
+}
+.policy-content p, .disclaimer-content p{
+    text-align: justify;
+    line-height: 2em;
+}
+
+.disclaimer-content p{
+    margin-bottom:1em;
+}
 
 /*########################  SPECIAL DISHES PAGE CSS #############################*/
 
