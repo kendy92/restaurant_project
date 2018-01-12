@@ -150,7 +150,8 @@ ul.top-nav li>ul>li>a:hover{
 }
 
 .special-section h2{
-    flex:1 1 70px;
+    flex: 1 1 10px;
+    font-size: inherit;
 }
 
 .special-section #special-dish{

@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="tablet-style.css">
-    <link rel="stylesheet" type="text/css" href="mobile-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -21,7 +19,6 @@
         <div class="logo">
             <a href="index.html"><img src="images/restaurant-logo.png" alt="Official logo for saffron restaurant" title="Saffron Restaurant logo"></a>
         </div>
-        <div class="toggleBtn">MENU</div>
         <div class="contact-top">
             <ul>
                 <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a
@@ -136,7 +133,7 @@
         </div>
     </div>
     <div class="heading-p">
-      <p>Incase you still wish to browse through our regular menu, please click here.</p>
+      <p>Incase you still wish to browse through our regular menu, please <a href="menu.html" style="color:#000;">click here</a></p>
       </div>
 </main>
 <footer id="footer">
@@ -160,7 +157,6 @@
                 <li><a href="menu.html">Our menu</a></li>
                 <li><a href="booking.html">Book an Event</a></li>
                 <li><a href="specials.html">Daily Specials</a></li>
-                <li><a href="media.html">Media</a></li>
                 <li><a href="contact-us.html">Contact us</a></li>
             </ul>
         </div>
@@ -191,7 +187,7 @@
         <div class="col-4">
             <ul>
                 <li><a href="policy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of use</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
             </ul>
         </div>
@@ -200,25 +196,5 @@
         <a href="#"><i class="fa fa-angle-up"></i></a>
     </div>
 </footer>
-<script>
-	function dailySpecial(evt, spcName) {
-		var i, tabcontent, tablinks;
-		tabcontent = document.getElementsByClassName("tabcontent");
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		}
-		tablinks = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
-		document.getElementById(spcName).style.display = "block";
-		evt.currentTarget.className += " active";
-	}
-
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 1; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-</script>
 </body>
 </html>
