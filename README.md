@@ -5,7 +5,7 @@ _**Group Project for Web Programming**_
 **Submision Deadline: 14/01/2018**
 
 **Team Member:** 
-- **Yuriy Iakymenko:** Location, inquiry pages
+- **Yuriy Iakymenko:** Location, Contact us pages
 - **Sviatoslav Tokariev:** Contest, Career pages
 - **Rajanveer Brar:** About us, Contents of website 
 - **Thang Cong Dinh:** Homepage, Booking, Gift-card pages
@@ -30,3 +30,12 @@ _**Group Project for Web Programming**_
 04/01/2018:
 
 - Add booking page
+
+11/01/2018:
+
+- Add menu and special pages
+
+12/01/2018:
+
+- Add career page
+- Improve snake game
