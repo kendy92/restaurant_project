@@ -1,7 +1,8 @@
 # Node build artifacts
 node_modules/
 .idea/
-
+*.scss
+*.css.map
 npm-debug.log
 
 # Local development
