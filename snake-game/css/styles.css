@@ -5,7 +5,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding:2rem 0;
+    padding:3.2rem 0;
 }
 .contest__heading,.contest__subheading{
     text-align: center;
@@ -40,8 +40,13 @@ canvas{
     align-items: center;
     padding: 0 1rem;
 }
+.game-info h2{
+    margin-top: 2rem;
+    margin-bottom:0.5rem;
+}
 .game-info p{
     font-size:12px;
+    line-height: 1.3rem;
 }
 .controls{
     width: 9em;
