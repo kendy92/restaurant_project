@@ -1,27 +1,27 @@
 //update 11/01/2018
 //Coded by Lee
 $(function(){
-    
+
     //init Date picker
     $("#datepicker").datepicker();
     $("#eventdate").datepicker();
-    
+
     //scroll to top
     $('#backToTop').on('click',function(){
        $("html, body").animate({ scrollTop: 0 }, "slow");
     });
-    
-    
+
+
     //top navigation
     $(".top-nav li").hover(function(){
        $(this).children(".child-nav").slideDown(500);
     }, function(){
         $(this).children(".child-nav").slideUp(500);
     });
-    
+
     //special dish random value
     var dishes = ["Mulligatowny Soup","Chicken Karahi","Chicken Jalfrezi","Mutton Home Style", "Beef Manalu"];
-    
+
     //slideshow
     $(".banner-section > .slideshow:gt(0)").hide();
     var delayTime = 1000;
@@ -39,8 +39,8 @@ $(function(){
         .end()
         .appendTo(".banner-section");
     }, 3000);
-    
-   
+
+
     //validation reserve table form
     $(".btnReserve").on('click',function(){
         var name = $("#name").val();
@@ -49,7 +49,7 @@ $(function(){
         var time = $("#time").val();
         var groupsize = $("#group_size").val();
         var location = $("#location").val();
-        
+
         if(name === ""){
             alert("Please enter your name!");
             $("#name").focus();
@@ -74,28 +74,28 @@ $(function(){
             alert("Thanks for reserving table with us. We will contact you soon!");
             return true;
         }
-        
+
     });
-    
+
     //validation booking form
     var get_venue = "";
     $("#venue li #bookbtn").on('click',function(){
        get_venue = $(this).attr("data");
        $("#selected-venue").text("You have select " + get_venue + " venue.");
     });
-    
+
     $("#venue li .thumbnail-venue img").on('click',function(){
         $(".zoom-thumbnail").fadeIn(500);
         var url = $(this).attr("src");
         $(".zoom-thumbnail img").attr("src",url);
     });
-    
+
     $(".zoom-thumbnail .close-btn").on('click',function(){
-       $(".zoom-thumbnail").fadeOut(500); 
+       $(".zoom-thumbnail").fadeOut(500);
     });
-    
+
     //trigger submit btn
-    
+
     $("#btnsubmit").on('click',function(){
         var ename = $("#eventname").val();
         var etype = $("#eventtype").val();
@@ -111,7 +111,7 @@ $(function(){
         var einfo = $("#addinfo").val();
         var checkbox1 = $("#checkbox1").prop('checked');
         var checkbox2 = $("#checkbox2").prop('checked');
-        
+
         if(ename === ""){
             alert("Please enter event name!");
             $("#eventname").focus();
@@ -154,11 +154,11 @@ $(function(){
             alert("Thanks for booking event with us. We will contact you soon!");
             $(location).attr('href', 'index.html');
         }
-        
-        
+
+
     });
-    
-    
+
+
     //preview giftcard
     var get_amt = 0;
     $("#amount li").on('click', function(){
@@ -167,7 +167,7 @@ $(function(){
         $(this).siblings().css({"background-color":"transparent", "color":"#fff"});
         $(this).css({"background-color":"rgba(0,0,0,0.3)","color":"#fff"});
     });
-    
+
     $("#preview-btn").on('click',function(){
         var sender = $("#sender_name").val();
         var recipient = $("#recipient_name").val();
@@ -177,7 +177,7 @@ $(function(){
         var quantity = $("#quantity").val();
         var checkbox1 = $("#checkbox1").prop("checked");
         var checkbox2 = $("#checkbox2").prop("checked");
-        
+
         if(get_amt === 0 && custom_amt === ""){
             alert("Please select or enter custom amount of giftcard!");
             $("#amount_value").focus();
@@ -218,36 +218,36 @@ $(function(){
             }else{
                 $(".giftcard_amt").text("$" + custom_amt);
             }
-            
+
             $(".giftcard_sender").html("<p>Loads of love</p><p>"+sender+"</p>")
         }
     });
-    
-    
+
+
     //show on scroll effect
     var windowHeight, windowScrollPos, currentPos, objectOffsetTop;
-    
+
     $.fn.showOnScroll = function(direction, speed){
         return $(this).each(function(){
             objectOffsetTop = $(this).offset().top;
-            
+
             if(!$(this).hasClass("hidden")){
                 if(direction == "right"){
                     $(this).css({
                            "opacity"	: 0,
                             "right"		: "1000px",
-                            "position"	: "relative" 
+                            "position"	: "relative"
                     });
                 }else{
                     $(this).css({
                            "opacity"	: 0,
                             "right"		: "-1000px",
-                            "position"	: "relative" 
+                            "position"	: "relative"
                     });
                 }
                 $(this).addClass("hidden");
             }
-            
+
             if(!$(this).hasClass("animated")){
                     if(currentPos > objectOffsetTop){
                         $(this).animate({
@@ -258,25 +258,25 @@ $(function(){
             }
         });
     }
-    
+
     $(window).scroll(function(){
         windowHeight = $(window).height();
         windowScrollPos = $(window).scrollTop();
         currentPos = windowHeight + windowScrollPos;
-        
+
         $(".about-us").showOnScroll("left",1000);
         $(".thumbnail:nth-child(1)").showOnScroll("right",1000);
         $(".thumbnail:nth-child(2)").showOnScroll("left",1000);
         $(".thumbnail:nth-child(3)").showOnScroll("right",1000);
-        
+
         $(".menu:nth-child(2n)").showOnScroll("left",1000);
         $(".menu:nth-child(2n+1)").showOnScroll("right",1000);
         $(".double-menu .child-menu").showOnScroll("right",1000);
-        
+
         $(".customer:nth-child(2n+1)").showOnScroll("left",1000);
         $(".customer:nth-child(2n)").showOnScroll("right",1200);
         $(".reservation-form").showOnScroll("left",2300);
     });
-    
-    
+
+
 });

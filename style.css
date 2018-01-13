@@ -31,7 +31,9 @@ ul, li{
 #header{
     background-color:#100E0F;
 }
-
+#header>.flex-container{
+    padding:0;
+}
 .flex-container{
     display:flex;
     flex-flow: row wrap;
@@ -45,6 +47,7 @@ ul, li{
 
 .logo img{
     width:200px;
+    margin-left: 0.5rem;
 }
 
 .contact-top{
@@ -61,7 +64,7 @@ ul, li{
 
 a.btn-contest{
     border:1px solid #fff;
-    padding:1em;
+    padding: 0.5rem;
     border-radius:5px;
     transition: .5s all ease;
 }
@@ -80,10 +83,17 @@ ul.top-nav{
     justify-content: space-around;
 }
 
+ul.top-nav li{
+    flex-grow:1;
+    text-align: center;
+    flex-basis: calc(100%/6);
+    position: relative;
+}
 ul.top-nav li a{
     display:block;
-    padding:1em;
+    padding:0.6rem;
     flex: 1 1 0;
+    transition:background-color 0.2s ease-out;
 }
 
 ul.top-nav li a:hover{
@@ -94,6 +104,7 @@ ul.top-nav li a:hover{
 ul.top-nav li ul{
     display:none;
     position:absolute;
+    width: 100%;
     padding:0;
     margin:0;
     background-color: #AE060E;
@@ -102,8 +113,8 @@ ul.top-nav li ul{
 
 ul.top-nav li ul li a{
     display:block;
-    padding:1em;
-    width:144px;
+    padding:0.6rem;
+    transition:background-color 0.2s ease-out;
 }
 
 ul.top-nav li>ul>li>a:hover{
@@ -408,8 +419,16 @@ ul.top-nav li>ul>li>a:hover{
 #footer{
     background-color:#222;
     color:#aaa;
+    font-size: 0.9rem;
 }
-
+#footer>.flex-container{
+    justify-content:space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#footer .col-4,#footer .col-8{
+    font-size: 0.8rem;
+}
 #footer h3{
     color:#fff;
 }
@@ -440,13 +459,11 @@ ul.top-nav li>ul>li>a:hover{
 .col-8{
     text-align: left;
     flex: 1 1 auto;
-    padding-left: 2em;
 }
 
 .col-4{
     flex: 2 1 auto;
     text-align: right;
-    padding-right: 2em;
 }
 
 .col-4 ul li{
@@ -485,7 +502,7 @@ ul.advertise li img{
     text-align:center;
 }
 
-..giftcard-content p{
+.giftcard-content p{
     text-align: justify;
 }
 
