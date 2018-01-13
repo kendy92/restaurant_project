@@ -1,0 +1,148 @@
+.careers__heading {
+  color: #100e0f;
+  font-size: 2em;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 3.2rem;
+  padding-bottom: 0.5em; }
+.careers h2.careers__heading {
+  padding-top: 2.7rem; }
+.careers .heading-p {
+  padding-left: 0;
+  padding-right: 0; }
+.careers__features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem; }
+  .careers__features-item {
+    min-width: 200px;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem; }
+    .careers__features-item img {
+      width: 60px; }
+    .careers__features-item h3 {
+      font-size: 1.05rem;
+      text-transform: capitalize; }
+.careers__form {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 0.5rem 2rem;
+    background-color: #AC0C18;
+    color: #fff; }
+  .careers__form-heading {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.9rem; }
+.careers__btn {
+  display: block;
+  background-color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #979797;
+  transition: all 0.3s ease-out;
+  cursor: pointer; }
+  .careers__btn:hover {
+    color: #fff;
+    background-color: #222; }
+  .careers__btn:focus, .careers__btn:active {
+    outline: none; }
+  .careers__btn--submit {
+    margin: 1.5rem auto; }
+
+.content__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 5rem;
+  padding-left: 5rem; }
+
+.terms-group {
+  display: flex;
+  align-items: center; }
+  .terms-group__wrapper {
+    width: 9rem;
+    text-align: right; }
+  .terms-group label {
+    margin-left: 2rem;
+    flex-grow: 1;
+    padding: 0.2rem;
+    font-size: 0.8rem; }
+  .terms-group input[type=checkbox] {
+    font-weight: bold;
+    font-size: 1.3rem; }
+    .terms-group input[type=checkbox]:focus {
+      outline: none; }
+
+.input-group {
+  display: flex;
+  margin-bottom: 1rem; }
+  .input-group > label {
+    width: 9rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; }
+    .input-group > label .small {
+      font-size: 0.7rem;
+      line-height: 0.7rem;
+      padding-right: 1rem; }
+  .input-group > input[type=text], .input-group > input[type=email], .input-group input[type=url], .input-group input[type=date], .input-group > select, .input-group > input[type=file], .input-group > .checkbox-wrapper, .input-group > .icon-input {
+    margin-left: 2rem;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #979797; }
+    .input-group > input[type=text]:focus, .input-group > input[type=email]:focus, .input-group input[type=url]:focus, .input-group input[type=date]:focus, .input-group > select:focus, .input-group > input[type=file]:focus, .input-group > .checkbox-wrapper:focus, .input-group > .icon-input:focus {
+      outline: none;
+      border-color: #181818; }
+  .input-group .icon-input {
+    position: relative;
+    padding: 0;
+    border: none; }
+    .input-group .icon-input > input {
+      margin-left: 0 !important;
+      padding-left: 3.5rem !important;
+      width: 100%; }
+    .input-group .icon-input::before {
+      content: "";
+      font: normal normal normal 14px/1 FontAwesome;
+      position: absolute;
+      padding: 0.45rem 0.8rem;
+      font-size: 1.5rem;
+      border-right: 1px solid #979797;
+      color: #979797; }
+    .input-group .icon-input--link::before {
+      content: "\f0c1"; }
+    .input-group .icon-input--date::before {
+      content: "\f073"; }
+  .input-group select {
+    color: grey; }
+    .input-group select:valid {
+      color: black; }
+    .input-group select option {
+      color: grey; }
+  .input-group .icon-input {
+    display: inline; }
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center; }
+  .checkbox-wrapper input[type=radio] {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    border: 0;
+    width: 1rem;
+    height: 2em; }
+    .checkbox-wrapper input[type=radio]:focus {
+      outline: none; }
+
+.pb0 {
+  padding-bottom: 0; }
+
+/*# sourceMappingURL=careers.css.map */

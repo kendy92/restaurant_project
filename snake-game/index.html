@@ -1,34 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Canvas test</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/icon.png" type="image/x-icon"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contest | Saffron Restaurant - Ultimate North Indian Food Paradise</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
 </head>
 <body>
-<canvas id="gameboard">
-    if you see this then your browser doesn't support canvas and this game unfortunately
-</canvas>
-<div class="game-info">
-    <div class="controls">
-        <div class="upline">
-            <div class="control" ><img src="img/upKey.png" alt="" id="up"></div>
+<header id="header">
+        <div class="flex-container">
+            <div class="logo">
+            <a href="index.html"><img src="../images/restaurant-logo.png" alt="This is the logo of website" title="The Restaurant logo"></a>
+            </div>
+            <div class="contact-top">
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+310701234567">+1-(647)-739-5138</a></li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@therestaurant.com">info@saffronrestaurant.ca</a></li>
+                    <li><a href="index.html" class="btn-contest">Enter Contest</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="middleline">
-            <div class="control" ><img src="img/leftKey.png" alt="" id="left"></div>
-            <div class="control" ><img src="img/pause.png" alt="" id="play"></div>
-            <div class="control" ><img src="img/rightKey.png" alt="" id="right"></div>
-        </div>
-        <div class="downline">
-            <div class="control" ><img src="img/downKey.png" alt="" id="down"></div>
+        <nav>
+            <ul class="top-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="child-nav">
+                        <li><a href="../about-us.html">Our Story</a></li>
+                        <li><a href="../core-team.html">Core Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="../menu.html">Menu</a></li>
+                <li><a href="../booking.html">Book an event</a></li>
+                <li><a href="../specials.html">Daily Specials</a></li>
+                <li><a href="#">Contact Us &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="child-nav">
+                        <li><a href="../inquiry.html">Inquiry</a></li>
+                        <li><a href="../location.html">Locations</a></li>
+                        <li><a href="../careers.html">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="contest-sm-btn"><a href="/snake-game">Enter Contest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="contest" id="main">
+
+    <h1 class="contest__heading">Contest for the smartest</h1>
+    <img src="../images/header-fork-img.png" alt="Saffron Restaurant" title="Saffron Restaurant"
+         class="heading-underimg"/>
+    <h2 class="contest__subheading">Score 100 to get free lunch!</h2>
+    <div class="contest__wrapper">
+        <canvas id="gameboard">
+            if you see this then your browser doesn't support canvas and this game unfortunately
+        </canvas>
+        <div class="game-info">
+            <div class="controls">
+                <div class="upline">
+                    <div class="control"><img src="img/upKey.png" alt="" id="up"></div>
+                </div>
+                <div class="middleline">
+                    <div class="control"><img src="img/leftKey.png" alt="" id="left"></div>
+                    <div class="control"><img src="img/pause.png" alt="" id="play"></div>
+                    <div class="control"><img src="img/rightKey.png" alt="" id="right"></div>
+                </div>
+                <div class="downline">
+                    <div class="control"><img src="img/downKey.png" alt="" id="down"></div>
+                </div>
+            </div>
+            <h2>Your score <span id="score">0</span></h2>
+            <p>You may use keyboard &larr;&rarr;&uarr;&darr; </p>
+            <p>or a-w-s-d to control the snake</p>
+            <p>and space to pause the game</p>
         </div>
     </div>
-    <h2>Your score <span id="score">0</span></h2>
-    <p>You may use keyboard &larr;&rarr;&uarr;&darr; or a-w-s-d to control the snake</p> 
-    <p>and space to pause the game</p>
-</div>
+
+</main>
+
+<footer id="footer">
+        <div class="row flex-container">
+            <div class="col-3">
+                <h3>Get in touch</h3>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+1-(647)-739-5138">+1-(647)-739-5138</a></p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@saffronrestaurant.ca">info@saffronrestaurant.ca</a></p>
+                <div>
+                    <ul class="social-link">
+                        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>Saffron Restaurant</h3>
+                <ul>
+                    <li><a href="../about-us.html">About</a></li>
+                    <li><a href="../menu.html">Our menu</a></li>
+                    <li><a href="../booking.html">Book an Event</a></li>
+                    <li><a href="../specials.html">Daily Specials</a></li>
+                    <li><a href="../contact-us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Open Daily</h3>
+                <ul>
+                    <li>Monday 11:00 AM - 11:00 PM</li>
+                    <li>Tuesday 11:00 AM - 11:00 PM</li>
+                    <li>Wednesday 11:00 AM - 11:00 PM</li>
+                    <li>Thursday 11:00 AM - 11:00 PM</li>
+                    <li>Friday 11:00 AM - 11:00 PM</li>
+                    <li>Saturday 09:00 AM - 11:00 PM</li>
+                    <li>Sunday 09:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="advertise">
+                    <li><img src="../images/1trip-logo.png"></li>
+                    <li><img src="../images/2ubereat.png"></li>
+                    <li><img src="../images/3JUST-EAT-Logo-EPS-vector-image.png"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-container">
+            <div class="col-8">
+                <p>&copy; 2018 Saffron Restaurant</p>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li><a href="../policy.html">Privacy Policy</a></li>
+                    <li><a href="../disclaimer.html">Disclaimer</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="backToTop">
+            <a href="#"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </footer>
 <script src="js/script.js"></script>
 </body>
 </html>
