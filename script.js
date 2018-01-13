@@ -19,7 +19,6 @@ $(function(){
         $(this).children(".child-nav").slideUp(500);
     });
 
-<<<<<<< HEAD
 
     //special dish random value
     var dishes = ["Monday - Kashmiri Rogan Josh","Tuesday - Punjabi Butter Chicken","Wednesday - Banjari Gosht","Thursday - Kakori Kabab", "Friday - Hyderabadi Biryani", "Saturday - Dilli Murgh Jalfrezi", "Sunday - Malai Kofta"];
@@ -36,10 +35,6 @@ $(function(){
       })
 
 
-=======
-    //special dish random value
-    var dishes = ["Mulligatowny Soup","Chicken Karahi","Chicken Jalfrezi","Mutton Home Style", "Beef Manalu"];
->>>>>>> edac2fb6b81c5f02f4e4557d20e504bb67be4693
 
     //slideshow
     $(".banner-section > .slideshow:gt(0)").hide();
@@ -298,8 +293,4 @@ $(function(){
     });
 
 
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> edac2fb6b81c5f02f4e4557d20e504bb67be4693

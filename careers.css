@@ -28,18 +28,11 @@
       font-size: 1.05rem;
       text-transform: capitalize; }
 .careers__form {
-<<<<<<< HEAD
     max-width: 800px;
     margin: 0 auto 2rem;
     padding: 0.5rem 2rem;
     background-color: #AC0C18;
     color: #fff; }
-=======
-  border: 2px solid darkgrey;
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  padding: 0.5rem 2rem; }
->>>>>>> edac2fb6b81c5f02f4e4557d20e504bb67be4693
   .careers__form-heading {
     font-size: 1.5rem;
     text-transform: uppercase;
