@@ -1108,3 +1108,9 @@ ul.location-nav li a i{
     background-color: #fff;
 }
 
+#map i{
+    display: block;
+    font-size: 3rem;
+    padding: 1em;
+}
+
