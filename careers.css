@@ -40,17 +40,16 @@
     margin-bottom: 1.5rem;
     margin-top: 1.9rem; }
 .careers__btn {
-  color: #AC0C18;
+  color: #fff;
   display: block;
-  background-color: #fff;
-  padding: 0.7rem 1.5rem;
-  border: 1px solid #979797;
+  background-color: #AC0C18;
+  padding: 0.7rem 2rem;
+  border: 1px solid #ffffff;
   transition: all 0.3s ease-out;
   cursor: pointer; }
   .careers__btn:hover {
     color: #AC0C18;
-    background-color: #fff;
-    font-weight:bold;}
+    background-color: #fff8f6;}
   .careers__btn:focus, .careers__btn:active {
     outline: none; }
   .careers__btn--submit {
