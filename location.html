@@ -157,14 +157,19 @@
             });
         }
           
+        var m = document.getElementById("map").offsetTop;
+          
         document.getElementById("add1").onclick = function(){
             addMarker(downtown);
+            window.scrollTo(0,m);
         };
         document.getElementById("add2").onclick = function(){
             addMarker(markham);
+            window.scrollTo(0,m);
         };
         document.getElementById("add3").onclick = function(){
             addMarker(etobicoke);
+            window.scrollTo(0,m);
         };
       }
     </script>
