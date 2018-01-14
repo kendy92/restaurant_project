@@ -18,6 +18,7 @@ $(function(){
     }, function(){
         $(this).children(".child-nav").slideUp(500);
     });
+    
 
 
     //special dish random value
@@ -53,6 +54,18 @@ $(function(){
         .end()
         .appendTo(".banner-section");
     }, 3000);
+    
+    
+    //location page accordation effect
+    $(".location-item").children(".location-detail").hide();
+    $(".location-item:nth-of-type(1)").children(".location-detail").show();
+    $(".location-item h2").on('click', function(){
+        $(".location-item h2").css("background-color","#AE060E");
+        $(".location-item").children(".location-detail").slideUp(500);
+        $(this).siblings(".location-detail").slideDown(500); 
+        $(this).css("background-color","darkred");
+    });
+    
 
 
     //validation reserve table form
