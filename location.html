@@ -75,7 +75,7 @@
         <p>Established in 2015, Saffron Restaurant is now located at 3 prime locations across Toronto, namely in Downtown, Markham and Etobicoke. You may contact us at any of these locations for reservations, event booking and other related queries.</p>
         
         <div class="location-item">
-            <h2><i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp;Saffron Restaurant - Downtown Location</h2>
+            <h2  id="add1title"><i id="item1-sign" class="fa fa-minus-circle" ></i> &nbsp;Saffron Restaurant - Downtown Location</h2>
                 <div class="location-detail">
                     <div class="location-address">
                         <strong>Address</strong>
@@ -95,7 +95,7 @@
         </div>
         
         <div class="location-item">
-            <h2><i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp;Saffron Restaurant - Markham Location</h2>
+            <h2  id="add2title"><i id="item2-sign" class="fa fa-plus-circle" ></i> &nbsp;Saffron Restaurant - Markham Location</h2>
                 <div class="location-detail">
                     <div class="location-address">
                         <strong>Address</strong>
@@ -115,7 +115,7 @@
         </div>
         
         <div class="location-item">
-            <h2><i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp;Saffron Restaurant - Etobicoke Location</h2>
+            <h2  id="add3title"><i id="item3-sign" class="fa fa-plus-circle" ></i> &nbsp;Saffron Restaurant - Etobicoke Location</h2>
                 <div class="location-detail">
                     <div class="location-address">
                         <strong>Address</strong>
@@ -158,18 +158,39 @@
         }
           
         var m = document.getElementById("map").offsetTop/1.5;
-          
+        addMarker(downtown);
         document.getElementById("add1").onclick = function(){
             addMarker(downtown);
-            window.scrollTo(0,m);
         };
         document.getElementById("add2").onclick = function(){
             addMarker(markham);
-            window.scrollTo(0,m);
         };
         document.getElementById("add3").onclick = function(){
             addMarker(etobicoke);
-            window.scrollTo(0,m);
+        };
+        document.getElementById("add1title").onclick = function(){
+            $("#item1-sign").addClass("fa-minus-circle")
+            $("#item2-sign").addClass("fa-plus-circle")
+            $("#item3-sign").addClass("fa-plus-circle")
+            $("#item2-sign").removeClass("fa-minus-circle")
+            $("#item3-sign").removeClass("fa-minus-circle")
+            addMarker(downtown);
+        };
+        document.getElementById("add2title").onclick = function(){
+            $("#item2-sign").addClass("fa-minus-circle")
+            $("#item1-sign").addClass("fa-plus-circle")
+            $("#item3-sign").addClass("fa-plus-circle")
+            $("#item1-sign").removeClass("fa-minus-circle")
+            $("#item3-sign").removeClass("fa-minus-circle")
+            addMarker(markham);
+        };
+        document.getElementById("add3title").onclick = function(){
+            $("#item3-sign").addClass("fa-minus-circle")
+            $("#item1-sign").addClass("fa-plus-circle")
+            $("#item2-sign").addClass("fa-plus-circle")
+            $("#item2-sign").removeClass("fa-minus-circle")
+            $("#item1-sign").removeClass("fa-minus-circle")
+            addMarker(etobicoke);
         };
       }
     </script>
