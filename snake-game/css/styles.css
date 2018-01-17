@@ -1,0 +1,79 @@
+
+.contest{
+    background: url(../../images/floral_bckgr_02-1-250x150.jpg) repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding:3.2rem 0;
+}
+.contest__heading,.contest__subheading{
+    text-align: center;
+    font-weight: 400;
+}
+.contest__heading{
+    margin-bottom:1rem;
+}
+.contest__subheading{
+    margin-bottom:1rem;
+    text-decoration: underline;
+    text-decoration-color: #AE060E;
+    margin-top: 0.5rem;
+}
+.contest__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+canvas{
+    max-height:100%;
+    border: 2px solid brown;
+    display: block;
+    background: url("../img/BG.jpg") ;
+    background-size:cover;
+}
+.game-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+.game-info h2{
+    margin-top: 2rem;
+    margin-bottom:0.5rem;
+}
+.game-info p{
+    font-size:12px;
+    line-height: 1.3rem;
+}
+.controls{
+    width: 9em;
+    height: 9em;
+    display: flex;
+    flex-direction:column;
+    margin-left:2em;
+    margin-right:2em;
+    border:1px solid green;
+}
+.upline,.downline{
+    display: flex;
+    justify-content: center;
+}
+.middleline{
+    display: flex;
+    justify-content:space-between;
+}
+.control {
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.control img{
+    max-width: 100%;
+}

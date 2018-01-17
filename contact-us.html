@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta nAMe="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Saffron Restaurant</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cform.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="flex-container">
+            <div class="logo">
+            <a href="index.html"><img src="images/restaurant-logo.png" alt="This is the logo of website" title="The Restaurant logo"></a>
+            </div>
+            <div class="contact-top">
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+310701234567">+1-(647)-739-5138</a></li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@therestaurant.com">info@saffronrestaurant.ca</a></li>
+                    <li><a href="snake-game/index.html" class="btn-contest">Enter Contest</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul class="top-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Book an event</a></li>
+                <li><a href="specials.html">Daily Specials</a></li>
+                <li><a href="#">Contact Us &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="child-nav">
+                        <li><a href="contact-us.html">Inquiry</a></li>
+                        <li><a href="location.html">Locations</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="contest-sm-btn"><a href="/snake-game">Enter Contest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="banner-section">
+            <div class="slideshow">
+              <!-- Slideshow pictures taken from pexels.com -->
+                <img src="images/menu-restaurant-vintage-table.jpg">
+            </div>
+           <div class="slideshow">
+                <img src="images/pic2.jpg">
+            </div>
+            <div class="slideshow">
+                <img src="images/pic3.jpg">
+            </div>
+
+            <div class="slideshow">
+                <img src="images/pic4.jpg">
+            </div>
+
+            <div class="special-section flex-container">
+                <h2>Daily Special:</h2>
+                <span id="special-dish">Loading...</span>
+            </div>
+        </div>
+    <h1 id="heading-style">Inquiry</h1>
+    <img src="images/header-fork-img.png" alt="Saffron Restaurant" title="Saffron Restaurant" class="heading-underimg"/>
+    <div class="heading-p">
+        <p>Do you wish to give us a feedback? or simply drop a message? </p>
+        <p>We at Saffron love to read your emails on how we can further improve our services
+        or simply get some love from you from time to time. If you have any query or suggestion, please let us know
+      in the section below.</p>
+
+      <div id="cform-box">
+        <div class ="cform-banner">
+          <img src="images/contact-banner.jpg">
+            <!-- design inspiration from freepik -->
+          </div>
+        <div class ="cform-entry">
+
+          <div class="container">
+            <form id="cf-form-details">
+
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="fullname" placeholder="please enter your full name..." required>
+
+              <label for="email_id">Email</label>
+              <input type="email" id="email_id" name="email" placeholder="e.g. xyz@example.com" required>
+
+              <label for="cphone">Contact Number (optional)</label>
+              <input type="tel" id="cphone" name="phoneno" placeholder="e.g. 555-325-5643">
+
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="subject" placeholder="write to us whatever you feel like ... just don't hate us!" required></textarea>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="heading-p">
+    <p>
+      Incase you are facing difficulties locating any of our restaurants, just click <a href="location.html" target="_blank">here</a>
+    </p>
+  </div>
+</main>
+<footer id="footer">
+        <div class="row flex-container">
+            <div class="col-3">
+                <h3>Get in touch</h3>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+1-(647)-739-5138">+1-(647)-739-5138</a></p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@saffronrestaurant.ca">info@saffronrestaurant.ca</a></p>
+                <div>
+                    <ul class="social-link">
+                        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>Saffron Restaurant</h3>
+                <ul>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="menu.html">Our menu</a></li>
+                    <li><a href="booking.html">Book an Event</a></li>
+                    <li><a href="specials.html">Daily Specials</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Open Daily</h3>
+                <ul>
+                    <li>Monday 11:00 AM - 11:00 PM</li>
+                    <li>Tuesday 11:00 AM - 11:00 PM</li>
+                    <li>Wednesday 11:00 AM - 11:00 PM</li>
+                    <li>Thursday 11:00 AM - 11:00 PM</li>
+                    <li>Friday 11:00 AM - 11:00 PM</li>
+                    <li>Saturday 09:00 AM - 11:00 PM</li>
+                    <li>Sunday 09:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="advertise">
+                    <li><img src="images/1trip-logo.png"></li>
+                    <li><img src="images/2ubereat.png"></li>
+                    <li><img src="images/3JUST-EAT-Logo-EPS-vector-image.png"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-container">
+            <div class="col-8">
+                <p>&copy; 2018 Saffron Restaurant</p>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="backToTop">
+            <a href="#"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

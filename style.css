@@ -1,0 +1,1200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html{
+    box-sizing:border-box;
+}
+
+*, *::before, *::after{
+    box-sizing:inherit;
+    margin:0;
+    padding:0;
+}
+
+body{
+    color:#fff;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    line-height: 2em;
+    background: url(images/floral_bckgr_02-1-250x150.jpg) repeat;
+}
+
+a,a:active, a:visited, ac:link{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul, li{
+    list-style-type:none;
+}
+
+#header{
+    background-color:#100E0F;
+}
+#header>.flex-container{
+    padding:0;
+}
+.flex-container{
+    display:flex;
+    flex-flow: row wrap;
+    padding:1em;
+    justify-content: space-around;
+}
+
+.logo{
+    flex: 1 1 0;
+}
+
+.logo img{
+    width:200px;
+    margin-left: 0.5rem;
+}
+
+.contact-top{
+    flex: 2 1 0;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.contact-top ul li{
+    display:inline-block;
+    margin-right:2em;
+    margin-top:1em;
+}
+
+a.btn-contest{
+    border:1px solid #fff;
+    padding: 0.5rem;
+    border-radius:5px;
+    transition: .5s all ease;
+}
+
+a.btn-contest:hover{
+    background-color:#fff;
+    border:1px solid #000;
+    color:#000;
+}
+
+ul.top-nav{
+    background-color: #AE060E;
+    position:relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+ul.top-nav li{
+    flex-grow:1;
+    text-align: center;
+    flex-basis: calc(100%/6);
+    position: relative;
+}
+ul.top-nav li a{
+    display:block;
+    padding:0.6rem;
+    flex: 1 1 0;
+    transition:background-color 0.2s ease-out;
+}
+
+ul.top-nav li a:hover{
+    background-color:#fff;
+    color:#AE060E;
+}
+
+ul.top-nav li ul{
+    display:none;
+    position:absolute;
+    width: 100%;
+    padding:0;
+    margin:0;
+    background-color: #AE060E;
+    z-index:9999;
+}
+
+ul.top-nav li ul li a{
+    display:block;
+    padding:0.6rem;
+    transition:background-color 0.2s ease-out;
+}
+
+ul.top-nav li>ul>li>a:hover{
+    background-color:#fff;
+    color: #AE060E;
+}
+
+.contest-sm-btn{
+        display:none;
+    }
+
+#main{
+    color:#000;
+}
+
+.banner-section{
+    position:relative;
+    height:450px;
+}
+
+.banner-section .slideshow{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.banner-section .slideshow img{
+    width:100%;
+    background-attachment:scroll;
+    background-size: cover;
+    height:450px;
+}
+
+.special-section{
+    width:100%;
+    padding:.5em 3em;
+    position:absolute;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    z-index:888;
+}
+
+.special-section h2{
+    flex: 1 1 10px;
+    font-size: inherit;
+}
+
+.special-section #special-dish{
+    flex:8 1 auto;
+    text-align:left;
+    color: #7CFF0A;
+}
+
+.about-us{
+    padding:3em;
+    text-align:justify;
+    width:100%;
+    margin: 0 auto;
+}
+
+.about-us img{
+    margin: 0 48%;
+    width:25px;
+}
+
+.about-us p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    padding: 0.75em 0;
+}
+
+.about-us h1{
+    color: #100e0f;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+.about-us a{
+    display: block;
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.features{
+    background-color:#AE060E;
+}
+
+.thumbnail{
+    text-align:center;
+    flex: 1 1 0;
+    padding: 0 3em;
+}
+
+.thumbnail img{
+    width: 75px;
+}
+
+.thumbnail h3{
+    text-align:center;
+    color:#fff;
+}
+
+.thumbnail p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.food-list{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+
+.menu, .double-menu{
+    flex:1 1 0;
+    padding:.5em;
+    position:relative;
+}
+
+.double-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.child-menu{
+    position:relative;
+    flex:1 1 auto;
+}
+
+.menu a, .child-menu a{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: block;
+    color: #d8c266;
+    text-decoration: none;
+    z-index: 222;
+    width: 100%;
+    padding-left: .5em;
+    height: 100%;
+    padding-top: 1em;
+}
+
+.menu img, .child-menu img{
+    width:100%;
+    filter: brightness(60%);
+}
+
+.child-menu img{
+    height:270px;
+}
+
+.menu, .child-menu{
+    cursor: pointer;
+}
+
+.menu:hover, .child-menu:hover{
+    bottom:5px;
+}
+
+
+
+.flipped{
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -khtml-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+
+.contact-us{
+    clear:both;
+    padding:3em;
+}
+
+[class*="customer"]{
+    position: relative;
+    flex-flow: row wrap;
+    border: 1px solid #dedede;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+[class*="customer"] .thumb{
+    flex:1 1 0;
+}
+
+[class*="customer"] .thumb .rating{
+    text-align: center;
+}
+
+[class*="customer"] .thumb img{
+    width:100%;
+    border-radius: 100px;
+}
+
+.rated{
+    color:orange;
+}
+
+[class*="customer"] .response{
+    flex: 5 1 0;
+    text-align: justify;
+    padding-left: .5em;
+    font-size: .85rem;
+    font-style: italic;
+}
+
+
+
+.feed-back{
+    flex: 2 1 0;
+    padding-right: 1em;
+}
+
+.feed-back h2{
+    margin-bottom:1em;
+}
+
+.reservation-form{
+    flex: 1 1 0;
+    position:relative;
+    background-color:#FFFFFF;
+    padding:1em;
+    text-align:center;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.reservation-form h3{
+    background-color:#AE060E;
+    color:#fff;
+    padding:.2em;
+    position:absolute;
+    top:-20px;
+    left:55px;
+    width:300px;
+}
+
+#reserveFrm{
+    padding-top:2em;
+}
+
+#reserveFrm label{
+    display: block;
+    text-align: left;
+    color: #585858;
+    padding-left: 2.3em;
+}
+
+#reserveFrm input, #reserveFrm #time, #reserveFrm #group_size, #reserveFrm #location{
+    width:300px;
+    height: 30px;
+    padding:.5em;
+    border:1px solid #ddd;
+    background-color: #F8F8F8;
+    margin-bottom:2em;
+
+}
+
+#reserveFrm textarea{
+    height:100px;
+    width:300px;
+    padding:.5em;
+    border:1px solid #ddd;
+    margin-bottom:1em;
+    background-color: #F8F8F8;
+}
+
+#btnSubmit{
+    background-color:#AE060E !important;
+    color:#fff;
+    width:100px !important;
+    padding:2em !important;
+    line-height:0em;
+    text-transform: uppercase;
+    font-weight:bold;
+    transition:all .5s ease;
+}
+
+#btnSubmit:hover{
+    background-color:transparent !important;
+    color: #AE060E;
+    border:1px solid #AE060E;
+    cursor:pointer;
+}
+
+#footer{
+    background-color:#222;
+    color:#aaa;
+    font-size: 0.9rem;
+}
+#footer>.flex-container{
+    justify-content:space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#footer .col-4,#footer .col-8{
+    font-size: 0.8rem;
+}
+#footer h3{
+    color:#fff;
+}
+
+#footer a{
+    color:#dedede;
+}
+
+#footer a:hover{
+    color:#fff;
+}
+
+.social-link li{
+    display:inline-block;
+    font-size:2.5em;
+    margin:.2em;
+}
+
+.social-link li a{
+    color:#b00000 !important;
+    transition: all .5s ease;
+}
+
+.social-link li a:hover{
+    color:#fff !important;
+}
+
+.col-8{
+    text-align: left;
+    flex: 1 1 auto;
+}
+
+.col-4{
+    flex: 2 1 auto;
+    text-align: right;
+}
+
+.col-4 ul li{
+    display:inline-block;
+    padding: 0 1em 0 1em;
+    border-right:1px solid #aaa;
+}
+
+.col-4 ul li:last-child{
+    border:none;
+}
+
+ul.advertise{
+    display:flex;
+    flex-flow:column wrap;
+}
+
+ul.advertise li{
+    flex:1 1 auto;
+    margin-bottom:.5em;
+}
+
+ul.advertise li img{
+    width:120px;
+}
+
+
+/* GIFT CARD PAGES */
+
+.giftcard-content{
+    padding:3em;
+    color:#000;
+}
+
+.giftcard-content h1{
+    text-align:center;
+}
+
+.giftcard-content p{
+    text-align: justify;
+}
+
+#giftcard-frm{
+    margin: 0 auto;
+    width: 80%;
+    padding: 2em;
+    background-color: #AE060E;
+    color: #fff;
+}
+
+#giftcard-frm label{
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+#giftcard-frm #amount{
+    position:relative;
+}
+
+#giftcard-frm #amount li{
+    display:inline-block;
+    border:1px solid #fff;
+    padding: .3em;
+    margin-right:.2em;
+    cursor: pointer;
+}
+
+#giftcard-frm #amount li:last-child{
+    border:none;
+}
+
+#giftcard-frm #amount li input{
+    padding: 1.3em;
+    border: 1px solid #fff;
+}
+
+#giftcard-frm input{
+    padding: 1.3em;
+    border: 1px solid #fff;
+    margin: .5em .5em .5em 0;
+}
+
+#giftcard-frm textarea{
+    padding: 1.3em;
+    border: 1px solid #fff;
+    width:525px;
+    margin: .5em .5em 0 0;
+}
+
+#giftcard-frm p{
+    font-size: .85rem;
+    font-style: italic;
+}
+
+#giftcard-frm div:last-child{
+    text-align: center;
+}
+
+
+#giftcard-frm .special-btn{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all .5s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#giftcard-frm .special-btn:hover{
+    background-color:rgba(0,0,0,0.09);
+    color:#fff;
+}
+
+
+.giftcard-preview{
+    display:none;
+    width:500px;
+    margin: .5em auto;
+    background-color:#000;
+    padding:1em;
+    border-radius: 5px;
+}
+
+.giftcard-preview .logo{
+    text-align:center;
+}
+
+.giftcard-preview .giftcard-preview-content .giftcard_amt{
+    text-align: left;
+    flex: 1 1 auto;
+    font-size: 2.5rem;
+    margin-top: .5em;
+    font-weight: bold;
+}
+
+.giftcard-preview .giftcard-preview-content .giftcard_sender{
+    flex: 1 1 auto;
+    text-align: right;
+    margin-top: 1em;
+}
+
+.giftcard-preview-content {
+  color: #ffffff;
+}
+
+
+/* BOOKING PAGE */
+.booking-content{
+    padding:3em;
+    color:#000;
+}
+
+.booking-content h1{
+    text-align: center;
+}
+
+#booking-frm{
+    width: 80%;
+    margin: 1em auto;
+    padding: 2em;
+    background-color: #AE060E;
+    color: #fff;
+}
+
+#booking-frm label{
+    display:inline-block;
+    width:150px;
+}
+
+#booking-frm input, #booking-frm select, #booking-frm textarea{
+    width:80%;
+    margin:.5em;
+    padding:.5em;
+    border:1px solid #dedede;
+}
+
+#booking-frm input, #booking-frm select{
+    height: 40px;
+}
+
+#booking-frm textarea{
+    height:100px;
+}
+
+#booking-frm #venue{
+    display:flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom:.5em;
+}
+
+#booking-frm input[type="checkbox"]{
+    width: 30px !important;
+    margin: 0 !important;
+    height: 12px !important;
+}
+#booking-frm #venue li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+#booking-frm #venue li img{
+    width:100px;
+    height:70px;
+    cursor: pointer;
+}
+
+#bookbtn{
+    width: 100px !important;
+    display: block;
+    margin: 0 auto !important;
+}
+
+#booking-frm p{
+    font-size:.85em;
+    font-style:italic;
+}
+
+#booking-frm div:last-child{
+    text-align: center;
+}
+
+#btnsubmit{
+    width: 140px !important;
+    background: transparent;
+    border: 1px solid #fff !important;
+    color: #fff;
+    transition: all .5s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#btnsubmit:hover{
+    background-color:rgba(0,0,0,0.09);
+    color:#fff;
+}
+
+
+.zoom-thumbnail{
+    display:none;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.zoom-thumbnail img{
+    width: 530px !important;
+    height: 320px !important;
+    padding-top: 2em;
+}
+
+.zoom-thumbnail .close-btn{
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    right: 27%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* animate button */
+.btn {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #000 !important;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+    background-color:rgba(0,0,0,0.09);
+}
+
+.btn::before, .btn::after{
+  content:"";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #555;
+}
+
+.btn:hover::before, .btn:hover::after{
+  width: 100%;
+}
+.btn:hover span::before, .btn:hover span::after{
+  height: 100%;
+}
+
+.btn span::before, .btn span::after{
+  content:"";
+  width:1px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #555;
+}
+
+.btn span{
+  display: block;
+  padding: 25px 80px;
+  text-transform: uppercase;
+}
+
+.btn-animated::after{
+  left:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-animated span::after{
+  right:0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-animated::before{
+  right: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-animated span::before{
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+#backToTop{
+   position:fixed;
+   right:30px;
+   bottom:30px;
+   z-index:999;
+}
+
+#backToTop a{
+    min-width: 50px;
+    padding: .3em;
+    vertical-align: bottom;
+    background-color: #f9f9f9;
+    font-size: 2em;
+    line-height: 0;
+    color:#333;
+    text-align: center;
+    display:inline-block;
+    border: 1px solid #303030;
+}
+
+#backToTop a:hover{
+    color:#000;
+}
+
+
+/*########################  HEADINGS #############################*/
+
+#heading-style {
+    color: #100e0f;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+.heading-underimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading-p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    padding: 0.75em 5em 2em 5em;
+}
+
+/* POLICY & DISCLAIMER PAGE */
+
+.policy-content, .disclaimer-content{
+    color:#333;
+    padding:3em;
+}
+
+.policy-content h2, .disclaimer-content h1{
+    margin: 1em 0;
+}
+
+.policy-content h1{
+    text-align: center;
+}
+.policy-content p, .disclaimer-content p{
+    text-align: justify;
+    line-height: 2em;
+}
+
+.disclaimer-content p{
+    margin-bottom:1em;
+}
+
+/*########################  SPECIAL DISHES PAGE CSS #############################*/
+
+.row{
+    display: flex;
+}
+
+.tab {
+    width: 30%;
+}
+
+.tabcontent__wrapper {
+    background-color: #222;
+    width: 70%;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #fefefe;
+    padding: 22px 16px;
+    width: 100%;
+    border: 1px solid #000000;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    background-color: #B20016;
+}
+
+.tab button:hover {
+    background-color: #E83511;
+}
+
+.tab button.active {
+    background-color: #FF150D;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border-left: none;
+    max-height: 460px;
+    overflow-y: scroll;
+}
+
+.tabcontent h3 {
+    text-align: center;
+    color: #fefefe;
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+
+.tabcontent h4 {
+    text-align: center;
+    padding-top: 1em;
+    color: #7CFF0A;
+    font-size: 1.25em;
+}
+
+.tabcontent p {
+    color: #ffffff;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.sp-img {
+    padding-top: 1em;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25%;
+    max-width: 250px;
+    height: auto;
+}
+
+
+/*########################  RESTAURANT MENU PAGE CSS #############################*/
+
+.ui-accordion .ui-accordion-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #B20016;
+  color: #fefefe;
+}
+
+.ui-state-active {
+  border: 1px solid #7CFF0A;
+  background: #7CFF0A;
+}
+
+#menubox th {
+  display: none;
+}
+
+#menubox td {
+    border-bottom: 1px dotted #000
+}
+
+#menubox {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menubox h4{
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.menu-item-box {
+  width: 100%;
+}
+
+.menu-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.menu-desc {
+  font-family: 'Montserrat', sans-serif;
+  color: #b20016;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.menu-tax {
+  padding-top: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.menu-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+/*########################  LOCATION PAGE CSS #############################*/
+
+
+.location-content{
+    padding:3em;
+}
+
+.location-content h1{
+    color: #100e0f;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.location-content h3{
+    text-align: center;
+    font-weight:bold;
+    font-size: 1.3rem;
+    margin-top:1em;
+}
+
+.location-content p{
+    text-align: justify;
+}
+
+.location-item:nth-of-type(1){
+    margin-top:2em;
+}
+
+.location-content .location-item h2{
+    background-color: #AE060E;
+    color: #fff;
+    padding: .5em;
+    font-size: 1.3rem;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.location-detail{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    line-height: 2em;
+    text-align: center;
+}
+
+.location-detail p{
+    text-align:center;
+}
+
+.location-address p{
+    cursor: pointer;
+}
+
+.location-address, .location-contact, .location-subway{
+    flex: 1 1 0;
+    border: 1px solid #dedede;
+    padding: .5em 1em;
+}
+
+.location-contact a{
+    color:#000;
+}
+
+ul.location-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 2.5em auto;
+}
+
+ul.location-nav li a{
+    flex: 1 1 0;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ul.location-nav li a i{
+    display: block;
+    text-align: center;
+    font-size: 2.7rem;
+    padding-bottom: .5em;
+}
+
+
+#map {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+#map i{
+    display: block;
+    font-size: 3rem;
+    padding: 1em;
+}
+
+
+/*########################  ABOUT PAGE CSS #############################*/
+
+.about-content {
+	border-bottom: 3px dotted #e5e5e5;
+	box-shadow: inset 0 -1px 0 0 #e5e5e5, inset 0 1px 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5, 0 -1px 0 0 #e5e5e5;
+	margin-bottom: 1px;
+  padding: 1em;
+}
+
+#chef-content {
+  display: flex;
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chef-section1 {
+  flex: 1;
+}
+
+.chef-section2 {
+  flex: 2;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  font-size: 0.85em;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+#chefphoto {
+    margin-top: 1.75em;
+    border-radius: 30%;
+    max-width: 100%;
+    height: auto;
+}
+
+.chef-quote {
+  color: #AE060E;
+  display: block;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 0.9em;
+}
+
+
+/*########################  SITEMAP PAGE CSS #############################*/
+
+#sitemap-list {
+margin-left: 25%;
+padding: 2em;
+}
+
+
+#sitemap-list a {
+color: #000;
+}
+
+#sitemap-list li {
+  padding: 0.5em;
+}

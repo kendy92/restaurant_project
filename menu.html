@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta nAMe="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu - Saffron Restaurant</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="flex-container">
+            <div class="logo">
+            <a href="index.html"><img src="images/restaurant-logo.png" alt="This is the logo of website" title="The Restaurant logo"></a>
+            </div>
+            <div class="contact-top">
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+310701234567">+1-(647)-739-5138</a></li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@therestaurant.com">info@saffronrestaurant.ca</a></li>
+                    <li><a href="snake-game/index.html" class="btn-contest">Enter Contest</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul class="top-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Book an event</a></li>
+                <li><a href="specials.html">Daily Specials</a></li>
+                <li><a href="#">Contact Us &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="child-nav">
+                        <li><a href="contact-us.html">Inquiry</a></li>
+                        <li><a href="location.html">Locations</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="contest-sm-btn"><a href="/snake-game">Enter Contest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="banner-section">
+          <!-- Slideshow pictures taken from pexels.com -->
+            <div class="slideshow">
+                <img src="images/menu-restaurant-vintage-table.jpg">
+            </div>
+           <div class="slideshow">
+                <img src="images/pic2.jpg">
+            </div>
+            <div class="slideshow">
+                <img src="images/pic3.jpg">
+            </div>
+
+            <div class="slideshow">
+                <img src="images/pic4.jpg">
+            </div>
+
+            <div class="special-section flex-container">
+                <h2>Daily Special:</h2>
+                <span id="special-dish">Loading...</span>
+            </div>
+        </div>
+  <h1 id="heading-style">Menu</h1>
+  <img src="images/header-fork-img.png" alt="Saffron Restaurant" title="Saffron Restaurant" class="heading-underimg"/>
+  <div class="heading-p">
+        <p>From planning a party for a friend or family, to having a cozy couples dinner, Saffron has got you covered!. </p>
+        <p>We guarantee a total food coma after trying our 100% authentic North Indian dishes, made by our
+          team of experienced chefs and served with love by our staff.</p>
+    </div>
+    <div id="menubox">
+      <h3>Starters/ Appetizers</h3>
+      <div>
+          <h4>VEGETARIAN</h4>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Name of the Dish</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Paneer Tikka</p>
+                  <p class="menu-desc">cottage cheese in tandoori masala, slow cooked in clay pot.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$12.55</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Paneer Malai Tikka</p>
+                  <p class="menu-desc">cottage cheese roasted with curd, cheese and herbs.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$11.35</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Paneer Kali Mirch Tikka</p>
+                  <p class="menu-desc">cottage cheese cubes with crushed peppercorns.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$12.75</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Mushroom Tikka</p>
+                  <p class="menu-desc">roasted mushrooms with spicy saffron special tikka masala.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$13.15</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">50-50 Tikka</p>
+                  <p class="menu-desc">conflicted between paneer and mushroom? have both tikkas in one platter.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$14.35</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Mushroom Pakora</p>
+                  <p class="menu-desc">deep fried mushroom fritters in gram flour.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$14.75</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Spring Rolls</p>
+                  <p class="menu-desc">crispy rolls with spicy vegetable stuffing. very spicy!</p>
+                </td>
+                <td>
+                  <p class="menu-price">$11.25</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Veg Bullet</p>
+                  <p class="menu-desc">mixed veggie fritters in the shape of a bullet. don't shoot, just eat!</p>
+                </td>
+                <td>
+                  <p class="menu-price">$12.75</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">French Fries</p>
+                  <p class="menu-desc">crispy fried potatoes with chunky chaat masala, gives peri-peri a run for the money.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$10.45</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>NON-VEGETARIAN</h4>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Name of the Dish</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Special Tandoori Chicken</p>
+                  <p class="menu-desc">oven cooked chicken in tandoori masala served in special smoked platter.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$12.25</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Tangri Chicken Punjabi</p>
+                  <p class="menu-desc">spicy chicken drumsticks cooked in clay oven.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$13.55</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Special Afghani Chicken</p>
+                  <p class="menu-desc">stuffed chicken with nuts, cheese and spices, slow cooked in an oven.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$13.75</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Zeera Lemon Chicken</p>
+                  <p class="menu-desc">tangy chicken with lemony cumin flavour.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$12.75</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Chicken Lollypop</p>
+                  <p class="menu-desc">a deep fried chicken delicacy marinated in tangy sauces</p>
+                </td>
+                <td>
+                  <p class="menu-price">$15.75</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Sher-e-Punjab</p>
+                  <p class="menu-desc">spicy chicken with semi dry masala of onion and tomatoes.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$15.25</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="menu-item-box">
+                  <p class="menu-item">Ludhiana Tangri</p>
+                  <p class="menu-desc">drumsticks in white cashew and cream marination.</p>
+                </td>
+                <td>
+                  <p class="menu-price">$14.75</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="menu-tax">
+            ** the prices do not include taxes, please add 13% HST
+          </p>
+      </div>
+      <h3>North Indian Chicken Specials</h3>
+      <div>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Tikka</p>
+                <p class="menu-desc">boneless chicken pieces marinated and cooked in clay pot.</p>
+              </td>
+              <td>
+                <p class="menu-price">$15.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Tikka Special</p>
+                <p class="menu-desc">boneless chicken in tandoori masala served in a smokey platter.</p>
+              </td>
+              <td>
+                <p class="menu-price">$16.75</p>
+              </td>
+            </tr>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Malai Tikka</p>
+                <p class="menu-desc">boneless chicken cooked in clay pot marinated in cream and desi curd.</p>
+              </td>
+              <td>
+                <p class="menu-price">$16.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Kali Mirch Tikka</p>
+                <p class="menu-desc">boneless chicken with peppercorns crushed.</p>
+              </td>
+              <td>
+                <p class="menu-price">$16.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Reshami Kabab</p>
+                <p class="menu-desc">oven cooked chicken in herbs and eggs.</p>
+              </td>
+              <td>
+                <p class="menu-price">$16.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Pakora</p>
+                <p class="menu-desc">Tired of KFC and Popeyes? Try our Indian twist of the famous fried chicken.</p>
+              </td>
+              <td>
+                <p class="menu-price">$17.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Seekh</p>
+                <p class="menu-desc">minced chicken prepared with spicy deggi mirch masala.</p>
+              </td>
+              <td>
+                <p class="menu-price">$15.25</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="menu-tax">
+          ** the prices do not include taxes, please add 13% HST
+        </p>
+      </div>
+      <h3>Biryani Island</h3>
+      <div>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Veg Biryani</p>
+                <p class="menu-desc">aromatic rice cooked with veggies and whole spices.</p>
+              </td>
+              <td>
+                <p class="menu-price">$13.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Paneer Biryani</p>
+                <p class="menu-desc">rice preparation with loads of cottage cheese.</p>
+              </td>
+              <td>
+                <p class="menu-price">$14.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Biryani (with gravy or raita)</p>
+                <p class="menu-desc">traditional rice and chicken delight full of aromatic flavour.</p>
+              </td>
+              <td>
+                <p class="menu-price">$15.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Fried Chicken Biryani</p>
+                <p class="menu-desc">rice prepared with pieces of crispy fried chicken.</p>
+              </td>
+              <td>
+                <p class="menu-price">$16.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Egg Biryani</p>
+                <p class="menu-desc">rice prepared with boiled eggs and omelette.</p>
+              </td>
+              <td>
+                <p class="menu-price">$15.25</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="menu-tax">
+          ** the prices do not include taxes, please add 13% HST
+        </p>
+      </div>
+      <h3>Main Course</h3>
+      <div>
+        <h4>VEGETARIAN</h4>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Kadai Paneer</p>
+                <p class="menu-desc">semi dry curry made with paneer, capsicum and spices</p>
+              </td>
+              <td>
+                <p class="menu-price">$17.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Paneer Tikka Masala</p>
+                <p class="menu-desc">Tandoori heavenly paneer served with a blend of spices and curry.</p>
+              </td>
+              <td>
+                <p class="menu-price">$17.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Butter Paneer</p>
+                <p class="menu-desc">Desi homestyle cottage cheese paneer with buttery masala curry.</p>
+              </td>
+              <td>
+                <p class="menu-price">$18.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chilly Paneer (Dry/ Gravy)</p>
+                <p class="menu-desc">Marinated spicy paneer served with or without thick gravy.</p>
+              </td>
+              <td>
+                <p class="menu-price">$17.45</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Special Dal Makhni</p>
+                <p class="menu-desc">The most iconic dish of North India, do try our special dish of whole black lentil, red kidney beans served with a blend of cream and butter.</p>
+              </td>
+              <td>
+                <p class="menu-price">$16.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Saffron's Paneer Special</p>
+                <p class="menu-desc">Our signature paneer dish is basically a happy marriage between paneer masala and makhni, blended with our special gravy.</p>
+              </td>
+              <td>
+                <p class="menu-price">$17.25</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>NON-VEGETARIAN</h4>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Special Creamy Chicken</p>
+                <p class="menu-desc">slow cooked chicken in cream and herbs.</p>
+              </td>
+              <td>
+                <p class="menu-price">$21.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chilly Chicken (Dry/ Gravy)</p>
+                <p class="menu-desc">chinese chicken delicacy with or without saffron's special sauce.</p>
+              </td>
+              <td>
+                <p class="menu-price">$22.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Butter Chicken</p>
+                <p class="menu-desc">desi ludhiana style tandoori chicken served in tomato-cream gravy.</p>
+              </td>
+              <td>
+                <p class="menu-price">$23.35</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Kadai Chicken</p>
+                <p class="menu-desc">spicy chicken with onion, capsicum and gravy.</p>
+              </td>
+              <td>
+                <p class="menu-price">$23.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Curry</p>
+                <p class="menu-desc">homestyle chicken served with a thin gravy.</p>
+              </td>
+              <td>
+                <p class="menu-price">$21.65</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Patiala Rara Chicken</p>
+                <p class="menu-desc">semi-dry chicken masala with fried onions.</p>
+              </td>
+              <td>
+                <p class="menu-price">$24.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Chicken Tikka Masala</p>
+                <p class="menu-desc">boneless chicken pieces served in tomato-based gravy after marination.</p>
+              </td>
+              <td>
+                <p class="menu-price">$22.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Egg Curry Special</p>
+                <p class="menu-desc">non-vegetarian gravy with boiled eggs.</p>
+              </td>
+              <td>
+                <p class="menu-price">$20.25</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="menu-tax">
+          ** the prices do not include taxes, please add 13% HST
+        </p>
+      </div>
+      <h3>Breads</h3>
+      <div>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Tandoori Roti</p>
+                <p class="menu-desc">traditional Indian flat bread of wheat flour.</p>
+              </td>
+              <td>
+                <p class="menu-price">$1.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Butter Roti</p>
+                <p class="menu-desc">tandoori roti with desi butter.</p>
+              </td>
+              <td>
+                <p class="menu-price">$1.45</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Plain Naan</p>
+                <p class="menu-desc">Indian flat bread made up of good ol yeast and flour.</p>
+              </td>
+              <td>
+                <p class="menu-price">$2.55</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Butter Naan</p>
+                <p class="menu-desc">Desi homestyle butter (makkhan) loaded on plain naan.</p>
+              </td>
+              <td>
+                <p class="menu-price">$2.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Plain Paratha</p>
+                <p class="menu-desc">crispy fried flat bread on tawa.</p>
+              </td>
+              <td>
+                <p class="menu-price">$1.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Lachha Paratha</p>
+                <p class="menu-desc">layered flat bread.</p>
+              </td>
+              <td>
+                <p class="menu-price">$2.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Garlic Naan</p>
+                <p class="menu-desc">flat bread with the flavour of garlic.</p>
+              </td>
+              <td>
+                <p class="menu-price">$2.45</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Onion Paratha/ Kulcha</p>
+                <p class="menu-desc">onion stuffed flat bread.</p>
+              </td>
+              <td>
+                <p class="menu-price">$2.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Paneer Naan with Gravy</p>
+                <p class="menu-desc">cottage cheese stuffing in a flat bread.</p>
+              </td>
+              <td>
+                <p class="menu-price">$3.15</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Keema Naan with Gravy</p>
+                <p class="menu-desc">chicken mince stuffed in a flat bread.</p>
+              </td>
+              <td>
+                <p class="menu-price">$3.25</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="menu-tax">
+          ** the prices do not include taxes, please add 13% HST
+        </p>
+      </div>
+
+      <h3>Drinks</h3>
+      <div>
+        <h4>COCKTAILS</h4>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Black Russian</p>
+                <p class="menu-desc">a mix of vodka and kahlua, topped with cola</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.65</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Pirates of Blue Lagoon</p>
+                <p class="menu-desc">our bartender's favourite, a mix of vodka, blue curacao and pineapple topped with lemonade</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Caprioska</p>
+                <p class="menu-desc">a muddled favourite vodka with brown sugar and mint</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Mojitos</p>
+                <p class="menu-desc">muddled speciality, white rum and mint flavour Daiquiri white rum with a distinct flavour, on the rock or frozen </p>
+              </td>
+              <td>
+                <p class="menu-price">$6.35</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Bloody Mary</p>
+                <p class="menu-desc">vodka with spicy tomato juice the relaxer a soothing a mix of peach and vodka shaken with pineapple and cranberry juice</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.45</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Planter's Punch</p>
+                <p class="menu-desc">a mix of white rum, dark rum, orange juice and dash of grenadine</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Whiskey Sour</p>
+                <p class="menu-desc">whisky with sweet and sour</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.45</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Gimlet</p>
+                <p class="menu-desc">gin and lime cordial</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.35</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Guava Marry</p>
+                <p class="menu-desc">a spicy mix of guava juice and in-house vodka</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.55</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Cosmopolitan</p>
+                <p class="menu-desc">a combination of vodka, triple sec and cranberry juice</p>
+              </td>
+              <td>
+                <p class="menu-price">$6.45</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>SAFFRON SPECIAL</h4>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Saffron Whirl</p>
+                <p class="menu-desc">ice cream, thandai, milk and dry fruits</p>
+              </td>
+              <td>
+                <p class="menu-price">$4.35</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Saffron Choco</p>
+                <p class="menu-desc">ice cream, milk and chocolate syrup</p>
+              </td>
+              <td>
+                <p class="menu-price">$4.45</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Saffron Cindrella</p>
+                <p class="menu-desc">grapes juice, orange and triple sec mint</p>
+              </td>
+              <td>
+                <p class="menu-price">$4.85</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Saffron Delight</p>
+                <p class="menu-desc">orange juice, lychee juice with a hint of mint</p>
+              </td>
+              <td>
+                <p class="menu-price">$4.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Saffron Sunrise</p>
+                <p class="menu-desc">orange juice and grendine syrup</p>
+              </td>
+              <td>
+                <p class="menu-price">$4.25</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>ENERGIZERS</h4>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Name of the Dish</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Energy Drink</p>
+              </td>
+              <td>
+                <p class="menu-price">$2.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Diet Coke/ Tonic Water</p>
+              </td>
+              <td>
+                <p class="menu-price">$1.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Canned Juice</p>
+              </td>
+              <td>
+                <p class="menu-price">$2.65</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Aerated Water</p>
+              </td>
+              <td>
+                <p class="menu-price">$1.25</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Fresh Lime Soda/ Water</p>
+              </td>
+              <td>
+                <p class="menu-price">$1.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-item-box">
+                <p class="menu-item">Mineral Water</p>
+              </td>
+              <td>
+                <p class="menu-price">$1.35</p>
+              </td>
+              </tr>
+          </tbody>
+        </table>
+        <p class="menu-tax">
+          ** the prices do not include taxes, please add 13% HST
+        </p>
+      </div>
+    </div>
+    <div class="heading-p">
+        <p> Want to try our special dish of the day? Check out what's in store for you.</p>
+    </div>
+</main>
+<footer id="footer">
+        <div class="row flex-container">
+            <div class="col-3">
+                <h3>Get in touch</h3>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+1-(647)-739-5138">+1-(647)-739-5138</a></p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:info@saffronrestaurant.ca">info@saffronrestaurant.ca</a></p>
+                <div>
+                    <ul class="social-link">
+                        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>Saffron Restaurant</h3>
+                <ul>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="menu.html">Our menu</a></li>
+                    <li><a href="booking.html">Book an Event</a></li>
+                    <li><a href="specials.html">Daily Specials</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Open Daily</h3>
+                <ul>
+                    <li>Monday 11:00 AM - 11:00 PM</li>
+                    <li>Tuesday 11:00 AM - 11:00 PM</li>
+                    <li>Wednesday 11:00 AM - 11:00 PM</li>
+                    <li>Thursday 11:00 AM - 11:00 PM</li>
+                    <li>Friday 11:00 AM - 11:00 PM</li>
+                    <li>Saturday 09:00 AM - 11:00 PM</li>
+                    <li>Sunday 09:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="advertise">
+                    <li><img src="images/1trip-logo.png"></li>
+                    <li><img src="images/2ubereat.png"></li>
+                    <li><img src="images/3JUST-EAT-Logo-EPS-vector-image.png"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-container">
+            <div class="col-8">
+                <p>&copy; 2018 Saffron Restaurant</p>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="backToTop">
+            <a href="#"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Contact Form CSS*/
+
+#cform-box {
+  display: flex;
+}
+
+.cform-banner {
+  flex: 2;
+  padding-top: 2em;
+}
+
+.cform-entry {
+  flex: 3;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+input[type=text],input[type=tel],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #b20016;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.heading-p a {
+  color: #000;
+}
+
+.heading-p a:hover {
+  color: blue;
+}
+
+#cf-message {
+  height: 143px;
+}
